@@ -1,0 +1,7 @@
+- type: alert
+  id: Crawling
+  icons:
+  - sprite: /Textures/Genesis/Alerts/crawling.rsi
+    state: icon
+  name: alerts-crawling-name
+  description: alerts-crawling-desc
