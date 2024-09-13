@@ -1,41 +1,47 @@
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconBlueShield
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: BlueShield
+  jobName: job-name-blueshield
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconMagistrat
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: Magistrat
+  jobName: job-name-magistrat
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconSeniorSalvage
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: SeniorSalvage
+  jobName: job-name-senior-salvage
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconSeniorService
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: SeniorService
+  jobName: job-name-senior-service
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconSalvage
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: Salvage
+  jobName: job-name-salvagespec
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconJediNT
   icon:
     sprite: /Textures/Genesis/Interface/Misc/job_icons.rsi
     state: JediNtSecurity
+  jobName: job-name-jedi-nt
