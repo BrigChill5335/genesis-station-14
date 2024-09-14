@@ -21,6 +21,9 @@
 # Head
 - type: loadout
   id: SalvageBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorSalvage
   equipment:
     head: ClothingHeadHatBeretSalvage
 
