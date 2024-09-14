@@ -1,5 +1,6 @@
 - type: department
   id: CentralCommand
+  name: department-CentralCommand
   description: department-CentralCommand-description
   color: "#13db0f"
   roles:
@@ -9,7 +10,8 @@
 
 - type: department
   id: CentComSpecialists
-  description: department-CentСom-description
+  name: department-CentComSpecialists
+  description: department-CentCom-description
   color: "#35a41e"
   roles:
   - CentComConsultant
