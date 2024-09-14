@@ -1,4 +1,3 @@
-#WIP
 # Senior times
 - type: loadoutEffectGroup
   id: SeniorSalvage
@@ -22,22 +21,11 @@
 # Head
 - type: loadout
   id: SalvageBeret
-  equipment: SalvageBeret
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorSalvage
-
-- type: startingGear
-  id: SalvageBeret
   equipment:
     head: ClothingHeadHatBeretSalvage
 
 # Jumpsuit
 - type: loadout
-  id: JumpsuitSalvage
-  equipment: JumpsuitSalvage
-
-- type: startingGear
   id: JumpsuitSalvage
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
