@@ -18,10 +18,10 @@
 
 - type: department
   id: Law
+  name: department-Cargo
   description: department-Law-description
   color: "#FF5297"
   roles:
   - Magistrat
   - IAA
   - Lawyer
-
