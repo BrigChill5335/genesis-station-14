@@ -112,14 +112,6 @@
   equipment:
     outerClothing: ClothingOuterWinterMed
 
-- type: loadout
-  id: SeniorPhysicianLabCoat
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorPhysician
-  equipment:
-    outerClothing: ClothingOuterCoatLabSeniorPhysician
-
 # Shoes
 - type: loadout
   id: MedicalWinterBoots
