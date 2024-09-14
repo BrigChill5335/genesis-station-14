@@ -1,7 +1,8 @@
 # Head
 - type: loadout
   id: SeniorSalvageBeret
-  equipment: SalvageBeret
+  equipment:
+    head: ClothingHeadHatBeretSalvage
 
 # Jumpsuit
 - type: loadout
