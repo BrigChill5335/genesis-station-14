@@ -76,3 +76,23 @@
   - !type:BuyerJobCondition
     whitelist:
     - Miner
+
+- type: listing
+  id: UplinkClothingEyesVision
+  name: uplink-clothing-pnv-name
+  description: uplink-clothing-pnv-desc
+  productEntity: ClothingEyesVision
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkWearables
+
+- type: listing
+  id: UplinkMiniatureEnergyCrossbow
+  name: uplink-miniature-energy-crossbow-syndie-green-name
+  description: uplink-miniature-energy-crossbow-syndie-green-desc
+  productEntity: MiniatureEnergyCrossbow
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
