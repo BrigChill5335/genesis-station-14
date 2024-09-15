@@ -9,7 +9,7 @@
     state: icon
   - type: Gun
     soundGunshot:
-      path: /Audio/Genesis/Weapons/Guns/Gunshots/heavy_shot_suppressed.ogg
+      path: /Audio/Genesis/Weapons/Guns/GunShots/heavy_shot_suppressed.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletMic
     fireCost: 900
