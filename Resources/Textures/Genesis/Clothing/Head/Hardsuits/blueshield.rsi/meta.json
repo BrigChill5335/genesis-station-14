@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "sprited by TheGypsyBaron",
+  "copyright": "made by: no_mad. Edit Debiloid3000",
   "size": {
     "x": 32,
     "y": 32
@@ -12,9 +12,6 @@
     },
     {
       "name": "icon-flash"
-    },
-    {
-      "name": "light-icon"
     },
     {
       "name": "off-equipped-HELMET",
