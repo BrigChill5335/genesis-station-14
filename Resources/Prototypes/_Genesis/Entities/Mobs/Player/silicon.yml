@@ -6,7 +6,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - Boris
+      - PositronicBrain
       borg_module:
       - BorgModuleStandart
       - BorgModuleMining
@@ -28,7 +28,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - Boris
+      - PositronicBrain
       borg_module:
       - BorgModuleStandart
       - BorgModuleAdvancedTool
@@ -51,7 +51,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - Boris
+      - PositronicBrain
       borg_module:
       - BorgModuleStandart
       - BorgModuleLightReplacer
@@ -73,7 +73,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - Boris
+      - PositronicBrain
       borg_module:
       - BorgModuleStandart
       - BorgModuleAdvancedTreatment
