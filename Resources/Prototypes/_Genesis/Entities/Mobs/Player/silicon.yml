@@ -8,7 +8,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleStandart
+      - BorgModuleStandard
       - BorgModuleMining
       - BorgModuleGPS
       - BorgModuleJetpack
@@ -30,7 +30,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleStandart
+      - BorgModuleStandard
       - BorgModuleAdvancedTool
       - BorgModuleCable
       - BorgModuleConstruction
@@ -53,7 +53,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleStandart
+      - BorgModuleStandard
       - BorgModuleLightReplacer
       - BorgModuleCleaning
       - BorgModuleAdvancedCleaning
@@ -75,7 +75,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleStandart
+      - BorgModuleStandard
       - BorgModuleAdvancedTreatment
       - BorgModuleTreatment
       - BorgModuleDefibrillator
@@ -97,6 +97,7 @@
       borg_brain:
         - PositronicBrain
       borg_module:
+        - BorgModuleStandard
         - ModuleSec
   - type: ItemSlots
     slots:
