@@ -46,6 +46,15 @@ job-name-ertjanitor = уборщик ОБР
 job-name-boxer = боксёр
 job-name-zookeeper = работник зоопарка
 job-name-visitor = посетитель
+# unused jobs
+# these are required for the agent ID job icon tooltips
+# I am keeping them for roleplaying opportunities
+job-name-geneticist = генетик
+job-name-no-id = Нет ID
+job-name-syndicate = Синдикат
+job-name-unknown = Неизвестно
+job-name-virologist = вирусолог
+job-name-zombie = Зомби
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = атмосферный техник
 JobBartender = бармен
