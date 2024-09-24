@@ -213,6 +213,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: Crawler # Genesis-Edit
 
 - type: entity
   save: false
