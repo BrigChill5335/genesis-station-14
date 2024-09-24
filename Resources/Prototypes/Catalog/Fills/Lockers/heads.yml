@@ -9,6 +9,7 @@
     - id: CargoSaleComputerCircuitboard
     - id: CargoShuttleComputerCircuitboard
     - id: CargoShuttleConsoleCircuitboard
+    - id: SalvageMagnetMachineCircuitboard
     - id: CigPackGreen
       prob: 0.50
     - id: ClothingHeadsetAltCargo
@@ -331,6 +332,7 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
+    - id: WantedListCartridge
     - id: WeaponEnergyGunMultiphase # Genesis-Edit
     - id: PrinterDocFlatpack # Corvax-Printer
 
