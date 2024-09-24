@@ -586,4 +586,4 @@ binds:
   canFocus: true
 - function: ToggleCrawling
   type: State
-  key: U
+  key: V
