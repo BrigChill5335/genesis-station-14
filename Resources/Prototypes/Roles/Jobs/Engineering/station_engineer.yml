@@ -2,6 +2,7 @@
   id: StationEngineer
   name: job-name-engineer
   description: job-description-engineer
+  color: "#EFB341"
   playTimeTracker: JobStationEngineer
   requirements:
     - !type:DepartmentTimeRequirement
@@ -20,6 +21,7 @@
 - type: startingGear
   id: StationEngineerGear
   equipment:
+    id: EngineerPDA
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering

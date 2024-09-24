@@ -2,6 +2,7 @@
   id: Quartermaster
   name: job-name-qm
   description: job-description-qm
+  color: "#A46106"
   playTimeTracker: JobQuartermaster
   requirements:
     - !type:RoleTimeRequirement
@@ -42,8 +43,9 @@
   equipment:
     id: QuartermasterPDA
     ears: ClothingHeadsetQM
-    belt: BoxFolderClipboard
     pocket1: AppraisalTool
+    pocket2: BoxFolderClipboard
   storage:
     back:
     - Flash
+    - TelescopicBaton

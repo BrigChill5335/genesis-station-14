@@ -1,0 +1,29 @@
+- type: department
+  id: CentralCommand
+  name: department-CentralCommand
+  description: department-CentralCommand-description
+  color: "#13db0f"
+  roles:
+  - CentComOfficial
+  - CentComOperator
+#  - CentralCommandOfficial
+
+- type: department
+  id: CentComSpecialists
+  name: department-CentComSpecialists
+  description: department-CentCom-description
+  color: "#35a41e"
+  roles:
+  - CentComConsultant
+  - BlueShield
+  - JediNT # By Space Stories Reworked by Genesis
+
+- type: department
+  id: Law
+  name: department-Law
+  description: department-Law-description
+  color: "#FF5297"
+  roles:
+  - Magistrat
+  - IAA
+  - Lawyer

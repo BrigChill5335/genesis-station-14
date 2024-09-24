@@ -1,0 +1,34 @@
+﻿- type: entity
+  id: ActionEatMouse
+  name: action-name-eat-mouse
+  description: action-description-eat-mouse
+  components:
+    - type: InstantAction
+      useDelay: 10
+      icon: Genesis/Icons/verbiconfangs.png
+      event: !type:EatMouseActionEvent
+
+- type: entity
+  id: ActionHairball
+  name: hairball-action
+  description: hairball-action-desc
+  components:
+    - type: InstantAction
+#      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
+      priority: -10
+      event: !type:HairballActionEvent
+      charges: 1
+      useDelay: 30
+
+- type: entity
+  id: ActionWoundLicking
+  name: Lick Wound
+  description: Stop bleeding by licking your wounds
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    whitelist: { components: [ HumanoidAppearance ] }
+    interactOnMiss: false
+    icon: { sprite: Mobs/Species/Human/organs.rsi, state: tongue }
+    priority: -1
+    event: !type:WoundLickingActionEvent
