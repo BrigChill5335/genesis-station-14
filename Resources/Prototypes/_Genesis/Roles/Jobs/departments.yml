@@ -1,14 +1,4 @@
 - type: department
-  id: CentralCommand
-  name: department-CentralCommand
-  description: department-CentralCommand-description
-  color: "#13db0f"
-  roles:
-  - CentComOfficial
-  - CentComOperator
-#  - CentralCommandOfficial
-
-- type: department
   id: CentComSpecialists
   name: department-CentComSpecialists
   description: department-CentCom-description
