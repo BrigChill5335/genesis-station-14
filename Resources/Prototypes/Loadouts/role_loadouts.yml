@@ -616,9 +616,3 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupPocketTankDouble
-
-- type: roleLoadout
-  id: RoleSurvivalEVA
-  groups:
-  - GroupEVATank
-  - SurvivalExtended
