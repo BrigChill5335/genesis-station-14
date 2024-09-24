@@ -63,7 +63,6 @@
   roles:
   - Captain
   - Magistrat # Genesis-Station
-  - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
