@@ -41,6 +41,8 @@
   description: department-CentralCommand-description
   color: "#0c344d"
   roles:
+  - CentComOfficial # Genesis-Station
+  - CentComOperator # Genesis-Station
   - CentralCommandOfficial
   - CBURN
   - ERTLeader
@@ -50,7 +52,6 @@
   - ERTSecurity
   - ERTEngineer
   - DeathSquad
-  editorHidden: true
   weight: 120
 
 - type: department
