@@ -1,1 +1,0 @@
-department-CentralCommand-description = Central Command protects Nanotrasen assets by ensuring that tasks and issues are resolved at Nanotrasen stations. Green and gold tones clearly show the employees of Central Command.
