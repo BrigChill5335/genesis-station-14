@@ -52,6 +52,7 @@
   - ERTSecurity
   - ERTEngineer
   - DeathSquad
+  primary: false
   weight: 120
 
 - type: department

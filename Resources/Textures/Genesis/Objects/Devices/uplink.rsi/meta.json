@@ -1,6 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+  "copyright": null,
   "size": {
     "x": 32,
     "y": 32
@@ -8,6 +9,9 @@
   "states": [
     {
       "name": "contractor_uplink"
+    },
+    {
+      "name": "nt-radio"
     }
   ]
 }
