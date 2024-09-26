@@ -25,7 +25,7 @@ Space Station 14 это ремейк SS13, который работает на 
 
 Статус сборки ветки arumoon-server: [![pipeline status](https://gitlab.workbench.network/Workbench-Team/space-station-14/badges/arumoon-server/pipeline.svg)](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/commits/arumoon-server)
 
-Готовые билды сборки от Workbench Team Вы можете скачать из ветка master-ru: [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/master-ru-builds.html) или [артефактов CI/CD (медленно)](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=master-ru&status=success) ветка arumoon-server: [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/arumoon-server-builds.html) или [артефактов CI/CD (медленно)](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=arumoon-server&status=success)
+Готовые билды сборки от Workbench Team. Вы можете скачать из: ветка master-ru: [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/master-ru-builds.html) или [артефактов CI/CD (медленно)](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=master-ru&status=success) ветка arumoon-server: [CDN хостинга (быстро)](https://ss14.lolicon.monster/builds/arumoon-server-builds.html) или [артефактов CI/CD (медленно)](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/pipelines?page=1&scope=all&ref=arumoon-server&status=success)
 
 ## BrigChill3000
 Статус нашей сборки: [![pipeline status](https://gitlab.workbench.network/BrigChill3000/genesis-station-14/badges/master/pipeline.svg)](https://gitlab.workbench.network/BrigChill3000/genesis-station-14/-/commits/master)
