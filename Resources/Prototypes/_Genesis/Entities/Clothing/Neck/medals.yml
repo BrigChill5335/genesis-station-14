@@ -9,7 +9,6 @@
   - type: Clothing
     sprite: Genesis/Clothing/Neck/Medals/holyhunters.rsi
   - type: Unremoveable
-  - type: HeadCage
   - type: Tag
     tags:
     - Medal
