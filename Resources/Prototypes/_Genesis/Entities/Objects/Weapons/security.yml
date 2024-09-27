@@ -69,7 +69,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: laser_cyborg-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: laser_cyborg-unshaded
+      shader: unshaded
   - type: Gun
     selectedMode: SemiAuto
     fireRate: 3
