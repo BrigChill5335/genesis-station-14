@@ -100,13 +100,13 @@
     - type: PresetIdCard
       job: JediNT
 
-﻿- type: entity
+- type: entity
   parent: IDCardStandard
   id: PrisonerIDCard
   name: prisoner ID card
   components:
-    - type: Sprite
-      layers:
-        - state: orange
-    - type: PresetIdCard
-      job: Prisoner
+  - type: Sprite
+    layers:
+    - state: orange
+  - type: PresetIdCard
+    job: Prisoner
