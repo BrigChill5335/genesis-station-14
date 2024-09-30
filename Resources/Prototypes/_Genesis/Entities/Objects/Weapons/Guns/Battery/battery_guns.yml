@@ -358,8 +358,8 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: RedMediumLaser
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletDisabler
     fireCost: 100
   - type: MagazineVisuals
     magState: mag
@@ -408,7 +408,7 @@
     maxCharge: 2000
     startingCharge: 2000
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletEnergyGunLaserBlue
+    proto: BulletDisabler
     fireCost: 100
   - type: EnergyGun
     fireModes:
@@ -416,7 +416,7 @@
       fireCost: 50
       name: energy-gun-disable
       state: disabler
-    - proto: BulletEnergyGunLaser
+    - proto: BulletEnergyGunLaserBlue
       fireCost: 100
       name: energy-gun-lethal
       state: lethal
@@ -462,7 +462,7 @@
     maxCharge: 2000
     startingCharge: 2000
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletEnergyGunLaser
+    proto: BulletDisabler
     fireCost: 100
   - type: MagazineVisuals
     magState: mag
@@ -498,7 +498,7 @@
       fireCost: 50
       name: energy-gun-disable
       state: disabler
-    - proto: BulletEnergyGunLaser
+    - proto: BulletEnergyGunLaserBlue
       fireCost: 100
       name: energy-gun-lethal
       state: lethal
@@ -506,7 +506,7 @@
     maxCharge: 2000
     startingCharge: 2000
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletEnergyGunLaserBlue
+    proto: BulletDisabler
     fireCost: 100
   - type: MagazineVisuals
     magState: mag
