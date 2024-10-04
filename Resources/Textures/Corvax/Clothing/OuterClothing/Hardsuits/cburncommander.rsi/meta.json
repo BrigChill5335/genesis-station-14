@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CLA",
-  "copyright": "SUNRISE",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by 𝘽𝙚𝙡𝙖𝙮#7441",
   "size": {
     "x": 32,
     "y": 32
@@ -12,10 +12,6 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
-    },
-    {
-      "name": "equipped-OUTERCLOTHING-digi",
       "directions": 4
     },
     {
