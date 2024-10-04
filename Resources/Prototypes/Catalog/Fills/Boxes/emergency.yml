@@ -13,6 +13,10 @@
     - id: Flare
     - id: FoodSnackNutribrick
     - id: DrinkWaterBottleFull
+  - type: Item # Genesis-Edit
+    size: Large
+    shape:
+    - 0,0,1,1
   - type: Sprite
     layers:
     - state: internals
@@ -50,6 +54,10 @@
     - id: Flare
     - id: FoodSnackNutribrick
     - id: DrinkWaterBottleFull
+  - type: Item # Genesis-Edit
+    size: Large
+    shape:
+    - 0,0,1,1
   - type: Sprite
     layers:
     - state: internals
@@ -88,6 +96,10 @@
     - id: Flare
     - id: FoodSnackNutribrick
     - id: DrinkWaterBottleFull
+  - type: Item # Genesis-Edit
+    size: Large
+    shape:
+    - 0,0,1,1
   - type: Sprite
     layers:
     - state: internals
@@ -126,6 +138,10 @@
     - id: Flare
     - id: FoodSnackNutribrick
     - id: DrinkWaterBottleFull
+  - type: Item # Genesis-Edit
+    size: Large
+    shape:
+    - 0,0,1,1
   - type: Sprite
     layers:
     - state: internals
@@ -161,6 +177,9 @@
     - state: heart
   - type: Item
     heldPrefix: hug
+    size: Large # Genesis-Edit
+    shape:
+    - 0,0,1,1
   - type: StorageFill
     contents:
     - id: ClothingMaskBreath
@@ -233,6 +252,10 @@
     - id: EmergencyMedipen
     - id: Flare
     - id: FoodSnackNutribrick
+  - type: Item # Genesis-Edit
+    size: Large
+    shape:
+    - 0,0,1,1
   - type: Sprite
     layers:
     - state: internals

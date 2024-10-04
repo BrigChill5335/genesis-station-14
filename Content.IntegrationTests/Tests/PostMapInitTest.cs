@@ -31,12 +31,18 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] NoSpawnMaps =
         {
+            // Genesis-Start
+            "CentCommGenesis",
+            // Genesis-End
             "CentComm",
             "Dart"
         };
 
         private static readonly string[] Grids =
         {
+            // Genesis-Start
+            "/Maps/_Genesis/centcomm.yml",
+            // Genesis-End
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/cargo.yml",
             "/Maps/Shuttles/emergency.yml",
@@ -45,6 +51,9 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
+            // Genesis-Start
+            "CentCommGenesis",
+            // Genesis-End
             "Dev",
             "TestTeg",
             "Fland",
