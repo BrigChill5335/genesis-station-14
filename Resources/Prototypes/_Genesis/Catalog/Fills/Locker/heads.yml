@@ -17,7 +17,7 @@
       - id: PrinterDocFlatpack # Corvax-Printer
 
 - type: entity
-  id: LockerBlueShieldFilledNoneHardsuit
+  id: LockerBlueShieldFilledNoHardsuit
   suffix: Filled, No Hardsuit
   parent: LockerBlueShield
   components:
