@@ -15,6 +15,7 @@ using Content.Shared.Slippery;
 using Content.Shared.Strip.Components;
 using Content.Shared.Temperature;
 using Content.Shared.Verbs;
+using Content.Shared.Chat;
 using Content.Shared._Genesis.Eye.NightVision.Systems; // NightVision
 
 namespace Content.Shared.Inventory;
@@ -32,6 +33,7 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, ModifyChangedTemperatureEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, GetDefaultRadioChannelEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshNameModifiersEvent>(RelayInventoryEvent);
+        SubscribeLocalEvent<InventoryComponent, TransformSpeakerNameEvent>(RelayInventoryEvent);
 
         // by-ref events
         SubscribeLocalEvent<InventoryComponent, GetExplosionResistanceEvent>(RefRelayInventoryEvent);
