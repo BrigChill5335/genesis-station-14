@@ -222,7 +222,7 @@
   name: head of security centcom
   components:
   - type: SpawnPoint
-    job_id: HeafOfSecurityCentCom
+    job_id: HeadOfSecurityCentCom
   - type: Sprite
     sprite: Genesis/Markers/jobs.rsi
     layers:
