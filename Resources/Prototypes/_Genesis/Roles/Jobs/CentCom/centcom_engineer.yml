@@ -1,5 +1,5 @@
 - type: job
-  id: CenralCommandEngineer
+  id: CentralCommandEngineer
   name: job-name-centcom-engineering
   description: job-description-engineer
   playTimeTracker: JobCentralCommandEngineer
