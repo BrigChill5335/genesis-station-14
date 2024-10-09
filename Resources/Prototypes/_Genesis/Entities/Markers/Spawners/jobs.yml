@@ -228,3 +228,29 @@
     layers:
       - state: green
       - state: centcommember
+
+- type: entity
+  id: SpawnPointCentComMedicalDoctor
+  parent: SpawnPointJobBase
+  name: medical officer centcom
+  components:
+  - type: SpawnPoint
+    job_id: CentralCommandMedicalDoctor
+  - type: Sprite
+    sprite: Genesis/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: centcommember
+
+- type: entity
+  id: SpawnPointEngineerCentCom
+  parent: SpawnPointJobBase
+  name: engineer centcom
+  components:
+  - type: SpawnPoint
+    job_id: CentralCommandEngineer
+  - type: Sprite
+    sprite: Genesis/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: centcommember
