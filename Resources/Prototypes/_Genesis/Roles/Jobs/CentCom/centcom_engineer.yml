@@ -1,14 +1,17 @@
 - type: job
   id: CenralCommandEngineer
-  name: job-name-engineer
+  name: job-name-centcom-engineering
   description: job-description-engineer
   playTimeTracker: JobCentralCommandEngineer
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
       time: 14400 #4 hrs
+    - !type:DepartmentTimeRequirement
+      department: CentralCommand
+      time: 14400 #4 hrs
   startingGear: CentComEngineerGear
-  icon: "JobIconStationEngineer"
+  icon: "JobIconCentComEngineering"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
@@ -27,10 +30,10 @@
 - type: startingGear
   id: CentComEngineerGear
   equipment:
-    id: EngineerPDA
+    id: CentComEngineerPDA
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineering
+    ears: ClothingHeadsetCentCom
   #storage:
     #back:
     #- Stuff
