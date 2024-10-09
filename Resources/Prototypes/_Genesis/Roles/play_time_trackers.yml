@@ -58,6 +58,12 @@
 - type: playTimeTracker
   id: JobCentralCommandAssistant
 
+- type: playTimeTracker
+  id: JobCentralCommandMedicalDoctor
+
+- type: playTimeTracker
+  id: JobCentralCommandEngineer
+
 # Borgs
 - type: playTimeTracker
   id: JobEngineerBorg
