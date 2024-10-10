@@ -9,7 +9,7 @@ public abstract class SharedGhostReJoinSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        _configurationManager.OnValueChanged(CCVars.GhostRespawnTime,
+        _configurationManager.OnValueChanged(CCCVars.GhostRespawnTime,
             ghostRespawnTime =>
             {
                 _ghostRespawnTime = TimeSpan.FromMinutes(ghostRespawnTime);
