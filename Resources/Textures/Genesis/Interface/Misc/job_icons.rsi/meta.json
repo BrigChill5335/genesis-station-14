@@ -195,6 +195,48 @@
     },
     {
       "name": "HypnotizedEmpire"
+    },
+    {
+      "name": "taipan_botanist"
+    },
+    {
+      "name": "taipan_cargo_technician"
+    },
+    {
+      "name": "taipan_chef"
+    },
+    {
+      "name": "taipan_engineering"
+    },
+    {
+      "name": "taipan_medical_doctor"
+    },
+    {
+      "name": "taipan_scientist"
+    },
+    {
+      "name": "CCCargo"
+    },
+    {
+      "name": "DeathSquadron"
+    },
+    {
+      "name": "Nanotrasen"
+    },
+    {
+      "name": "NanotrasenEngi"
+    },
+    {
+      "name": "Nanotrasenjanitor"
+    },
+    {
+      "name": "NanotrasenMed"
+    },
+    {
+      "name": "NanotrasenOSO"
+    },
+    {
+      "name": "NanotrasenSec"
     }
   ]
 }

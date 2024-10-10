@@ -126,9 +126,9 @@
   description: Loose and strong uniform of the Central Commander special forces.
   components:
   - type: Sprite
-    sprite: Genesis/Clothing/Uniforms/Jumpsuit/centcom_officer.rsi # Временно
+    sprite: Genesis/Clothing/Uniforms/Jumpsuit/centcom-military.rsi
   - type: Clothing
-    sprite: Genesis/Clothing/Uniforms/Jumpsuit/centcom_officer.rsi # Временно
+    sprite: Genesis/Clothing/Uniforms/Jumpsuit/centcom-military.rsi
   - type: Armor
     modifiers:
       coefficients:

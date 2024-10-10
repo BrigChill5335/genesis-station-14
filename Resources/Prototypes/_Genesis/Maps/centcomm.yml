@@ -16,3 +16,9 @@
           availableJobs:
             CentComOfficial: [ 1, 1 ]
             CentComOperator: [ 1, 1 ]
+            HeadOfSecurityCentCom: [ 1, 1 ]
+            CentralCommandSecurityOfficer: [ 1, 1 ]
+            CentralCommandMedicalDoctor: [ 3, 3 ]
+            CentralCommandEngineer: [ 3, 3 ]
+            CentralCommandCargoTechnician: [ 2, 2 ]
+            CentralCommandAssistant: [ 3, 3 ]

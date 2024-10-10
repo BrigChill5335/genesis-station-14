@@ -81,7 +81,7 @@
           protos:
           - VGRoid
 
-# Genesis-Edit
+# Genesis-Edit CentCom
 - type: entity
   id: BaseStationCentcomm
   abstract: true

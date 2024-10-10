@@ -35,6 +35,7 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
+    - type: LoadedMap
   - uid: 1668
     components:
     - type: MetaData
@@ -32476,7 +32477,7 @@ entities:
     - type: Transform
       pos: 8.5,4.5
       parent: 1668
-- proto: SignAtmosMinsky
+- proto: SignAtmos
   entities:
   - uid: 6888
     components:
@@ -32490,7 +32491,7 @@ entities:
     - type: Transform
       pos: -4.5,13.5
       parent: 1668
-- proto: SignChemistry1
+- proto: SignChem
   entities:
   - uid: 6764
     components:
@@ -32890,6 +32891,27 @@ entities:
     - type: Transform
       pos: 7.5,-21.5
       parent: 1668
+- proto: SpawnPointCentComAssistant
+  entities:
+  - uid: 4251
+    components:
+    - type: Transform
+      pos: -0.5,-27.5
+      parent: 1668
+- proto: SpawnPointCentComCargo
+  entities:
+  - uid: 5058
+    components:
+    - type: Transform
+      pos: -12.5,16.5
+      parent: 1668
+- proto: SpawnPointCentComMedicalDoctor
+  entities:
+  - uid: 6508
+    components:
+    - type: Transform
+      pos: 12.5,-6.5
+      parent: 1668
 - proto: SpawnPointCentComOfficial
   entities:
   - uid: 3149
@@ -32903,6 +32925,27 @@ entities:
     components:
     - type: Transform
       pos: 0.5,-1.5
+      parent: 1668
+- proto: SpawnPointCentComSecurityOfficer
+  entities:
+  - uid: 6509
+    components:
+    - type: Transform
+      pos: 9.5,24.5
+      parent: 1668
+- proto: SpawnPointEngineerCentCom
+  entities:
+  - uid: 6492
+    components:
+    - type: Transform
+      pos: 25.5,-23.5
+      parent: 1668
+- proto: SpawnPointHeadOfSecurityCentCom
+  entities:
+  - uid: 6507
+    components:
+    - type: Transform
+      pos: 5.5,18.5
       parent: 1668
 - proto: SS13Memorial
   entities:

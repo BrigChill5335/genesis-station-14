@@ -93,7 +93,8 @@
   - HeadOfSecurityCentComHead
   - HeadofSecurityNeck
   - HeadOfSecurityCentComJumpsuit
-  - HeadOfSecurityBackpack 
+  - HeadOfSecurityBackpack
+  - SecurityOuterClothing
   - SecurityGloves
   - SecurityBelt
   - SecurityShoes
@@ -149,7 +150,7 @@
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
-  id: JobCenralCommandEngineer
+  id: JobCentralCommandEngineer
   groups:
   - GroupTankHarness
   - ChiefEngineerHead

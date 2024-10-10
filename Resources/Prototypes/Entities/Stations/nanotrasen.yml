@@ -33,11 +33,17 @@
   id: NanotrasenCentralCommand
   parent:
     - BaseStation
-    - BaseStationCargo
-    - BaseStationShuttles
-    - BaseStationCentcomm
     - BaseStationAlertLevels
     - BaseStationNanotrasen
+    # Genesis-Edit
+    - BaseCentCommShuttles
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationShuttles
+    - BaseStationExpeditions
+    - BaseStationMagnet
+    # Genesis-Edit
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform

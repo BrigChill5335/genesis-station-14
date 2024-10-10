@@ -182,9 +182,9 @@
   description: Beret for a head of security.
   components:
   - type: Sprite
-    sprite: Genesis/Clothing/Head/Hats/amilitary_beret.rsi
+    sprite: Genesis/Clothing/Head/Hats/centcom_military_beret.rsi
   - type: Clothing
-    sprite: Genesis/Clothing/Head/Hats/amilitary_beret.rsi
+    sprite: Genesis/Clothing/Head/Hats/centcom_military_beret.rsi
   - type: Tag
     tags:
     - ClothMade
