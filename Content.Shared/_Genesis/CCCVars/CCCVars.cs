@@ -1,3 +1,4 @@
+﻿using Robust.Shared;
 ﻿using Robust.Shared.Configuration;
 
 namespace Content.Shared._Genesis.CCCVars;
@@ -76,4 +77,14 @@ public sealed class CCCVars
     /// </summary>
     public static readonly CVarDef<bool> PeacefulRoundEnd =
         CVarDef.Create("game.peaceful_end", true, CVar.SERVERONLY);
+
+    /// 
+    /// Ghost Respawn
+    ///
+
+    public static readonly CVarDef<float> GhostRespawnTime =
+        CVarDef.Create("ghost.respawn_time", 15f, CVar.SERVER | CVar.REPLICATED);
+
+    public static readonly CVarDef<int> GhostRespawnMaxPlayers =
+        CVarDef.Create("ghost.respawn_max_players", 40, CVar.SERVERONLY);
 }
