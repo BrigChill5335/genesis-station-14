@@ -8,7 +8,7 @@ using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Logs;
-using Content.Shared._Genesis.CCVar;
+using Content.Shared._Genesis.CCCVars;
 using Content.Shared._Genesis.Ghost;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
