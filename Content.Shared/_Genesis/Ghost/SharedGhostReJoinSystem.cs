@@ -1,4 +1,4 @@
-using Content.Shared._Genesis.CCVar;
+using Content.Shared._Genesis.CCCVars;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
