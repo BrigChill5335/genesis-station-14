@@ -77,7 +77,7 @@ public sealed class CCCVars
     public static readonly CVarDef<bool> PeacefulRoundEnd =
         CVarDef.Create("game.peaceful_end", true, CVar.SERVERONLY);
 
-        /*
+    /*
      * Ghost Respawn
      */
 
