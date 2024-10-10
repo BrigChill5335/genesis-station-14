@@ -1,22 +1,27 @@
-﻿using Content.Server.EUI;
+using Content.Server.EUI;
 using Content.Shared._Genesis.Ghost;
 using Content.Shared.Eui;
 using Content.Shared.Ghost;
 using Robust.Shared.Player;
+
 namespace Content.Server._Genesis.Ghost;
+
 public sealed class GhostReJoinEui : BaseEui
 {
     private readonly GhostReJoinSystem _ghostReJoinSystem;
     private readonly Entity<GhostComponent> _entity;
+
     public GhostReJoinEui(GhostReJoinSystem ghostReJoinSystem, Entity<GhostComponent> entity)
     {
         _ghostReJoinSystem = ghostReJoinSystem;
         _entity = entity;
     }
+
     public override EuiStateBase GetNewState()
     {
         return _ghostReJoinSystem.UpdateUserInterface(_entity);
     }
+
     public override void HandleMessage(EuiMessageBase msg)
     {
         if (msg is GhostReJoinCharacterMessage msg1)
