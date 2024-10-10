@@ -55,6 +55,10 @@ job-name-syndicate = Синдикат
 job-name-unknown = Неизвестно
 job-name-virologist = вирусолог
 job-name-zombie = Зомби
+# Job titles
+job-title-visitor = Посетитель
+job-title-cluwne = Клувн
+job-title-universal = Универсал
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = атмосферный техник
 JobBartender = бармен
