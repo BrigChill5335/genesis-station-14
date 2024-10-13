@@ -577,7 +577,7 @@ namespace Content.Server.Ghost
             if (ghost == null)
                 return false;
 
-            EntityManager.SystemOrNull<Backmen.Ghost.GhostReJoinSystem>()?.AttachGhost(ghost, mind.Session); // Genesis: ReturnToRound
+            EntityManager.SystemOrNull<_Genesis.Ghost.GhostReJoinSystem>()?.AttachGhost(ghost, mind.Session); // Genesis: ReturnToRound
 
             return true;
         }
