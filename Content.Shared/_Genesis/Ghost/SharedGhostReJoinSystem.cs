@@ -1,4 +1,4 @@
-using Content.Shared._Genesis.CCCVars;
+using Content.Shared._Genesis.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
@@ -13,7 +13,7 @@ public abstract class SharedGhostReJoinSystem : EntitySystem
     {
         base.Initialize();
 
-        _configurationManager.OnValueChanged(CCCVars.GhostRespawnTime,
+        _configurationManager.OnValueChanged(CCVars.GhostRespawnTime,
             ghostRespawnTime =>
             {
                 _ghostRespawnTime = TimeSpan.FromMinutes(ghostRespawnTime);
