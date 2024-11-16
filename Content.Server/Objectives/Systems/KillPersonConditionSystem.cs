@@ -27,7 +27,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 
-    private static readonly ProtoId<DepartmentPrototype> _ccDep = "CentralCommand";
+    private static readonly ProtoId<DepartmentPrototype> _ccDep = "CentCom";
 
     public override void Initialize()
     {
@@ -89,12 +89,12 @@ public sealed class KillPersonConditionSystem : EntitySystem
         var centcom = _prototype.Index(_ccDep);
         foreach (var mindId in minds.ToArray())
         {
-            if (!TryComp<JobComponent>(mindId, out var job) || job.Prototype == null)
+            if (!_roleSystem.MindHasRole<JobRoleComponent>(mindId, out var job) || job.Value.Comp1.JobPrototype == null)
             {
                 continue;
             }
 
-            if (!centcom.Roles.Contains(job.Prototype.Value))
+            if (!centcom.Roles.Contains(job.Value.Comp1.JobPrototype.Value))
             {
                 continue;
             }
