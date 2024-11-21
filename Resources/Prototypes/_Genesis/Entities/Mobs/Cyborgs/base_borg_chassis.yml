@@ -1,6 +1,6 @@
 - type: entity
   id: BaseBorgChassisNTs
-  parent: BaseBorgChassis
+  parent: BorgChassisSelectable
   abstract: true
   components:
   - type: NpcFactionMember
