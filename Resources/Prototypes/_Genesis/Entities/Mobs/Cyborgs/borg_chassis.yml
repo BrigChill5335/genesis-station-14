@@ -16,11 +16,6 @@
       map: ["light"]
       visible: false
   - type: BorgSwitchableType
-    selectedBorgType: security
-    sprite:
-      sprite: Genesis/Mobs/Silicon/Cyborg/chassis.rsi
-      state: sec
-    name: security borg
     inherentRadioChannels:
     - Security
     - Binary
