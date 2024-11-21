@@ -36,8 +36,6 @@
       sprite: Genesis/Mobs/Silicon/Cyborg/chassis.rsi
       state: sec
     name: security borg
-  - type: Construction
-    node: engineer
   - type: IntrinsicRadioTransmitter
     channels:
     - Security
