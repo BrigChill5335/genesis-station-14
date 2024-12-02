@@ -1,0 +1,28 @@
+- type: entity
+  id: BorgChassisSecurity
+  parent: BaseBorgChassisNTs
+  name: security borg
+  components:
+  - type: Sprite
+    sprite: Genesis/Mobs/Silicon/Cyborg/chassis.rsi
+    layers:
+    - state: sec
+    - state: sec_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: sec_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgSwitchableType
+    inherentRadioChannels:
+    - Security
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Security"], ["Command"], ["Research"]]
+  - type: ShowCriminalRecordIcons
+  - type: StationAiVision
+  - type: FlashImmunity

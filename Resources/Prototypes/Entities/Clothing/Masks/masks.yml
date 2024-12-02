@@ -371,11 +371,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    hideOnToggle: true
   - type: Armor
     modifiers:
       coefficients:
@@ -415,11 +410,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    hideOnToggle: true
   - type: FlashImmunity
   - type: EyeProtection
   - type: Armor

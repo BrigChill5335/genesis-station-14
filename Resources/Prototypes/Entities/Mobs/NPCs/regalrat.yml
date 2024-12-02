@@ -122,6 +122,10 @@
     attributes:
       gender: male
   - type: Sharp
+  - type: NightVision
+    isToggle: true
+    color: "#ff6161"
+    playSoundOn: false
 
 - type: entity
   id: MobRatKingBuff
