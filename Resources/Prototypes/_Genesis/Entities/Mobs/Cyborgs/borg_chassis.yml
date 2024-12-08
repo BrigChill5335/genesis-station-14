@@ -3,6 +3,8 @@
   parent: BaseBorgChassisNTs
   name: security borg
   components:
+  - type: SiliconLawProvider
+    laws: SecurityCrewsimov
   - type: Sprite
     sprite: Genesis/Mobs/Silicon/Cyborg/chassis.rsi
     layers:
@@ -15,14 +17,45 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  - type: BorgSwitchableType
-    inherentRadioChannels:
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - SecModule
+    hasMindState: sec_e
+    noMindState: sec_e_r
+  - type: PointLight
+    autoRot: true
+    netsync: false
+    color: "#ffeead"
+    radius: 4
+    energy: 2
+  - type: BorgTransponder
+    sprite:
+      sprite: Genesis/Mobs/Silicon/Cyborg/chassis.rsi
+      state: sec
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Security
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
     - Security
     - Binary
     - Common
     - Science
   - type: AccessReader
     access: [["Security"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgShort
+  - type: InteractionPopup
+    interactSuccessString: petting-success-engineer-cyborg
+    interactFailureString: petting-failure-engineer-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: ShowCriminalRecordIcons
   - type: StationAiVision
   - type: FlashImmunity
