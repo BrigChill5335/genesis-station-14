@@ -84,12 +84,12 @@ public sealed class KillPersonConditionSystem : EntitySystem
     }
 
     // start-genesis: centcom
-    private void FilterCentCom(List<EntityUid> minds)
+    private void FilterCentCom(HashSet<Entity<MindComponent>> minds)
     {
         var centcom = _prototype.Index(_ccDep);
         foreach (var mindId in minds.ToArray())
         {
-            if (!_roleSystem.MindHasRole<JobRoleComponent>(mindId, out var job) || job.Value.Comp1.JobPrototype == null)
+            if (!_roleSystem.MindHasRole<JobRoleComponent>(mindId.Owner, out var job) || job.Value.Comp1.JobPrototype == null)
             {
                 continue;
             }
@@ -125,8 +125,6 @@ public sealed class KillPersonConditionSystem : EntitySystem
             return;
         }
 
-        var allHeads = new HashSet<Entity<MindComponent>>();
-
         // start-genesis: centcom
         FilterCentCom(allHumans);
 
@@ -137,6 +135,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
         // end-genesis: centcom
 
+        var allHeads = new HashSet<Entity<MindComponent>>();
         foreach (var person in allHumans)
         {
             if (TryComp<MindComponent>(person, out var mind) && mind.OwnedEntity is { } ent && HasComp<CommandStaffComponent>(ent))
