@@ -18,7 +18,6 @@
     size: Small
     shape:
     - 0,0,2,2 # Genesis-Edit
-    size: Ginormous
   - type: Storage
     maxItemSize: Normal
     grid:
