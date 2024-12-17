@@ -16,7 +16,7 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Вклад
 
-Если Вы хотите предложить перевод или редактирование уже переведённого контента, мы с радостью ждём Ваши изменения на нашем [основном репозитории GitLab](https://gitlab.workbench.network/Workbench-Team/space-station-14) (рекомендуется) или [зеркале GitHub](https://github.com/Workbench-Team/space-station-14). Если Вам нужна помощь, посмотрите текущие [обсуждения в GitLab](https://gitlab.workbench.network/Workbench-Team/space-station-14/-/issues) или лучше перейдите на Discord или Revolt сервер Workbench Team для более удобной коммуникации.
+Если Вы хотите предложить перевод или редактирование уже переведённого контента, мы с радостью ждём Ваши изменения на нашем [основном репозитории GitHub](https://github.com/BrigChill3000/genesis-station-14). Если Вам нужна помощь, лучше перейдите на Discord сервер Brig для более удобной коммуникации.
 
 ## Готовая сборка
 
