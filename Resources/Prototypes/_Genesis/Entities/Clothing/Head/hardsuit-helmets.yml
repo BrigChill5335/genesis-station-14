@@ -76,9 +76,9 @@
   description: Lightweight hardsuit helmet that doesn't restrict your head movements.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/medical.rsi
+    sprite: Genesis/Clothing/Head/Hardsuits/seniorsalvage.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/medical.rsi
+    sprite: Genesis/Clothing/Head/Hardsuits/seniorsalvage.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
