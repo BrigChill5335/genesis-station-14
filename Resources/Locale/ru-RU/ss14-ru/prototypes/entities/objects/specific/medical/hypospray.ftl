@@ -38,5 +38,5 @@ ent-Hypopen = ручка
     .suffix = Гипоручка
 ent-HypopenBox = коробка с гипоручкой
     .desc = Небольшая коробка, содержащая гипоручку. Упаковка распадается при вскрытии, не оставляя после себя никаких улик.
-ent-WehMedipen = weh auto-injector
-    .desc = A rapid dose of Weh. Contains juice that makes you Weh.
+ent-WehMedipen = автоинъектор вех
+    .desc = Быстрая доза Вех. Содержит сок, который заставляет вас вехать.

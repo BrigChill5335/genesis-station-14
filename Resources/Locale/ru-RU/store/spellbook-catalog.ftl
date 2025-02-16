@@ -3,8 +3,8 @@ spellbook-fireball-name = Огненный шар
 spellbook-fireball-desc = Пусть большинство членов экипажа взорвутся от ярости, когда увидят этот огненный шар, направляющийся к ним!
 spellbook-blink-name = Прыжок
 spellbook-blink-desc = Не моргайте, иначе вы не заметите, как телепортируетесь.
-spellbook-voidapplause-name = Void Applause
-spellbook-voidapplause-desc = Swap places with the target, doesn't it make you want to do the boogie?
+spellbook-voidapplause-name = Аплодисменты пустоты
+spellbook-voidapplause-desc = Поменяйтесь местами с целью, разве вам не хочется сделать буги?
 spellbook-force-wall-name = Силовой барьер
 spellbook-force-wall-desc = Создайте три стены из чистой силы, через которые вы можете пройти, а другие - нет.
 spellbook-polymoprh-spider-name = Полиморф паука
@@ -17,14 +17,14 @@ spellbook-ethereal-jaunt-name = Эфирная прогулка
 spellbook-ethereal-jaunt-description = Проскользните в эфирный мир, чтобы ускользнуть от своих врагов!
 spellbook-mind-swap-name = Обмен разумами
 spellbook-mind-swap-description = Обменяйтесь телами с другим человеком!
-spellbook-smite-name = Smite
-spellbook-smite-desc = Don't like them? EXPLODE them into giblets! Requires Wizard Robe & Hat.
-spellbook-cluwne-name = Cluwne's Curse
-spellbook-cluwne-desc = For when you really hate someone and Smite isn't enough. Requires Wizard Robe & Hat.
-spellbook-slip-name = Slippery Slope
-spellbook-slip-desc = Learn the ancient ways of the Janitor and curse your target to be slippery. Requires Wizard Robe & Hat.
-spellbook-item-recall-name = Item Recall
-spellbook-item-recall-description = Mark a held item and summon it back at any time with just a snap of your fingers!
+spellbook-smite-name = Кара
+spellbook-smite-desc = Они вам не нравятся? Взрывайте их на потроха! Требуется мантия и шляпа волшебника.
+spellbook-cluwne-name = Проклятие Клувна
+spellbook-cluwne-desc = Для случаев, когда вы действительно ненавидите кого-то, а Кары недостаточно. Требуется мантия и шляпа волшебника.
+spellbook-slip-name = Скользкая дорожка
+spellbook-slip-desc = Изучите древние приемы Уборщика и прокляните свою цель, чтобы она была скользкой. Требуется мантия и шляпа волшебника.
+spellbook-item-recall-name = Отзыв предмета
+spellbook-item-recall-description = Пометьте удерживаемый предмет и вызовите его обратно в любой момент одним щелчком пальцев!
 
 # Equipment
 
