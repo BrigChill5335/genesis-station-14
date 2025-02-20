@@ -54,5 +54,5 @@ ent-ActionToggleWagging = Вилять хвостом
     .desc = Начать или прекратить вилять хвостом.
 ent-FakeMindShieldToggleAction = { "[" }color=green]Переключить поддельный щит разума[/color]
     .desc = Включить/выключить передачу данных импланта поддельного щита разума.
-ent-ActionToggleParamedicSiren = Toggle Paramedic Siren
-    .desc = Toggles the paramedic siren on and off.
+ent-ActionToggleParamedicSiren = Переключить сирену парамедика
+    .desc = Включает или выключает сирену парамедика.
