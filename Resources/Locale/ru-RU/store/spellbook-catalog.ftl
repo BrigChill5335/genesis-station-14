@@ -17,6 +17,8 @@ spellbook-ethereal-jaunt-name = Эфирная прогулка
 spellbook-ethereal-jaunt-description = Проскользните в эфирный мир, чтобы ускользнуть от своих врагов!
 spellbook-mind-swap-name = Обмен разумами
 spellbook-mind-swap-description = Обменяйтесь телами с другим человеком!
+spellbook-animate-name = Animate
+spellbook-animate-description = Bring an inanimate object to life!
 spellbook-smite-name = Кара
 spellbook-smite-desc = Они вам не нравятся? Взрывайте их на потроха! Требуется мантия и шляпа волшебника.
 spellbook-cluwne-name = Проклятие Клувна
@@ -34,6 +36,8 @@ spellbook-wand-polymorph-carp-name = Палочка полиморфа карп�
 spellbook-wand-polymorph-carp-description = На случай, когда вам срочно нужно филе карпа, а клоун выглядит уж очень аппетитно.
 spellbook-wand-locker-name = Палочка шкафчика
 spellbook-wand-locker-description = Стреляйте проклятыми шкафчиками по своим врагам и запирайте их!
+spellbook-staff-animation-name = Staff of Animation
+spellbook-staff-animation-description = Bring inanimate objects to life!
 
 # Events
 

@@ -6,7 +6,6 @@ ghost-gui-toggle-ghost-visibility-popup-off = Видимость призрак�
 ghost-gui-toggle-lighting-manager-popup-normal = Нормальное освещение.
 ghost-gui-toggle-lighting-manager-popup-personal-light = Включён персональный свет.
 ghost-gui-toggle-lighting-manager-popup-fullbright = Режим полного освещения.
-ghost-gui-toggle-lighting-manager-popup = Рендеринг света переключён.
 ghost-gui-toggle-fov-popup = Поле зрения переключено.
 ghost-gui-toggle-hearing-popup-on = Теперь вы слышите все фразы.
 ghost-gui-toggle-hearing-popup-off = Теперь вы слышите только радиосвязь и фразы поблизости.
