@@ -8,14 +8,20 @@
   ## Приступая к работе
   <Box>Необходимые части:</Box>
   <Box>
-    <GuideEntityEmbed Entity="Thruster"/>
-    <GuideEntityEmbed Entity="Gyroscope"/>
-    <GuideEntityEmbed Entity="ComputerShuttle"/>
+  <GuideEntityEmbed Entity="Thruster"/>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="ComputerShuttle"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="PortableGeneratorPacman" Caption="П.А.К.М.А.Н." />
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="SubstationBasic"/>
-    <GuideEntityEmbed Entity="PortableGeneratorPacman" Caption="П.А.К.М.А.Н."/>
-    </Box>
+  <GuideEntityEmbed Entity="CableHVStack"/>
+  <GuideEntityEmbed Entity="CableMVStack"/>
+  <GuideEntityEmbed Entity="CableApcStack"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  <Box>Необязательные части:</Box>
   <Box>
   <GuideEntityEmbed Entity="AirCanister"/>
   <GuideEntityEmbed Entity="LightTube" Caption="освещение"/>
@@ -23,18 +29,8 @@
   <GuideEntityEmbed Entity="SMESBasic"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="APCBasic"/>
-  </Box>
-  <Box>Необязательные части:</Box>
-  <Box>
-    <GuideEntityEmbed Entity="AirCanister"/>
-    <GuideEntityEmbed Entity="LightTube" Caption="лампа-трубка"/>
-    <GuideEntityEmbed Entity="AirlockGlassShuttle"/>
-    <GuideEntityEmbed Entity="SMESBasic"/>
-  </Box>
-  <Box>
-    <GuideEntityEmbed Entity="MobCorgiIan"/>
-    <GuideEntityEmbed Entity="NuclearBomb"/>
+  <GuideEntityEmbed Entity="MobCorgiIan"/>
+  <GuideEntityEmbed Entity="NuclearBomb"/>
   </Box>
 
   ## Фундамент
@@ -89,7 +85,7 @@
   Для работы они должны быть направлены в космос и не будут работать, если на пути сопла находится плитка.
   Вы можете вращать двигатели, даже закрепленные, используя [color=yellow][bold][keybind="RotateObjectClockwise"][/bold][/color] или [color=yellow][bold][keybind="RotateObjectCounterclockwise"][/bold][/color] для вращения по или против часовой стрелки.
 
-  Двигатели можно отключить или включить, используя [color=yellow][bold][keybind=«Use»][/bold][/color] с пустой рукой или [color=yellow][bold][keybind=«ActivateItemInWorld»][/bold][/color].
+  Двигатели можно отключить или включить, используя [color=yellow][bold][keybind="Use"][/bold][/color] с пустой рукой или [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color].
 
   ## Управление вращением
   Теперь, когда у вас есть управление направлением, вам нужно установить гироскоп для управления вращением.
@@ -118,7 +114,7 @@
 
   Однако некоторые станции предлагают гораздо лучшие генераторы и компактные решения, такие как ВСУ Шаттла или статический генератор.
   Они выдают высоковольтное напряжение (ВВ) и должны быть понижены до среднего (СВ) и низкого (НВ).
-  Luckily, these stations also usually provide wallmount substation boards for this purpose.К счастью, для этих целей на станциях обычно имеются платы настенных подстанций.
+  К счастью, для этих целей на станциях обычно имеются платы настенных подстанций.
 
   <Box HorizontalAlignment="Stretch">
     <Box>
