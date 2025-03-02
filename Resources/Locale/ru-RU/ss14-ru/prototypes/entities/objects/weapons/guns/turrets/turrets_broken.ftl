@@ -1,2 +1,2 @@
-ent-WeaponTurretSyndicateBroken = ballistic turret (broken)
-    .desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretSyndicateBroken = баллистическая турель (сломанная)
+    .desc = Автоматическая турель с баллистическим пулеметом.
