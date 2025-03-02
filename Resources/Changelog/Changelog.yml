@@ -1,29 +1,4 @@
 ﻿Entries:
-- author: Plykiya
-  changes:
-  - message: You can no longer print flares or shotgun flares.
-    type: Remove
-  id: 7528
-  time: '2024-10-18T03:28:30.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/32563
-- author: pheenty
-  changes:
-  - message: QM is now considered an important job.
-    type: Tweak
-  - message: QM is now correctly considered head for traitor's kill head objective,
-      while warden now isn't.
-    type: Fix
-  id: 7529
-  time: '2024-10-18T09:43:05.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/32721
-- author: JIPDawg
-  changes:
-  - message: On Salamander the round will now restart after 5 minutes from when the
-      Evac shuttle arrives at CentCom.
-    type: Tweak
-  id: 7530
-  time: '2024-10-18T10:03:12.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/32776
 - author: Errant
   changes:
   - message: Players becoming Traitor without a PDA now correctly get the text and
@@ -3896,3 +3871,28 @@
   id: 8027
   time: '2025-03-01T20:24:54.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/35583
+- author: metalgearsloth
+  changes:
+  - message: Removed radioactivity from uranium.
+    type: Tweak
+  id: 8028
+  time: '2025-03-02T02:29:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/35330
+- author: metalgearsloth
+  changes:
+  - message: Predict vending machine UI and have the buttons reflect whether the UI
+      is useable.
+    type: Tweak
+  id: 8029
+  time: '2025-03-02T02:47:52.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/33412
+- author: SlamBamActionman
+  changes:
+  - message: Phalanximine now has an overdose threshold and works slower, along with
+      other minor tweaks.
+    type: Tweak
+  - message: Arithrazine now deals increased damage during treatment.
+    type: Tweak
+  id: 8030
+  time: '2025-03-02T12:56:16.674298+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32209
