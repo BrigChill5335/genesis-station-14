@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:21:44
+  entityCount: 16586
+maps:
+- 1
+grids:
+- 2
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   5: FloorBlueCircuit
@@ -45,7 +56,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -45548,13 +45558,6 @@ entities:
     components:
     - type: Transform
       pos: 47.53349,-46.383266
-      parent: 2
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 1602
-    components:
-    - type: Transform
-      pos: 61.44984,39.56451
       parent: 2
 - proto: ClothingNeckScarfStripedBlack
   entities:
@@ -97791,13 +97794,6 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-46.5
-      parent: 2
-- proto: VendingMachinePride
-  entities:
-  - uid: 13514
-    components:
-    - type: Transform
-      pos: -23.5,-17.5
       parent: 2
 - proto: VendingMachineRoboDrobe
   entities:

@@ -1,6 +1,18 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/02/2025 15:22:08
+  entityCount: 28701
+maps:
+- 951
+grids:
+- 5350
+- 28213
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   11: FloorArcadeBlue
@@ -68,7 +80,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 5350
     components:
     - type: MetaData
@@ -68158,53 +68169,6 @@ entities:
     components:
     - type: Transform
       pos: 49.558456,-13.3518505
-      parent: 5350
-- proto: ClothingNeckCloakAro
-  entities:
-  - uid: 28327
-    components:
-    - type: Transform
-      pos: 48.4059,34.733707
-      parent: 5350
-- proto: ClothingNeckCloakBi
-  entities:
-  - uid: 28322
-    components:
-    - type: Transform
-      pos: -45.293335,5.678726
-      parent: 5350
-  - uid: 28323
-    components:
-    - type: Transform
-      pos: -39.36795,-12.329826
-      parent: 5350
-- proto: ClothingNeckCloakEnby
-  entities:
-  - uid: 28324
-    components:
-    - type: Transform
-      pos: -10.296133,-53.285557
-      parent: 5350
-- proto: ClothingNeckCloakGay
-  entities:
-  - uid: 16726
-    components:
-    - type: Transform
-      pos: 26.360043,-58.493557
-      parent: 5350
-- proto: ClothingNeckCloakLesbian
-  entities:
-  - uid: 28320
-    components:
-    - type: Transform
-      pos: -26.34226,41.685402
-      parent: 5350
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 24116
-    components:
-    - type: Transform
-      pos: 0.42782736,-64.34981
       parent: 5350
 - proto: ClothingNeckHeadphones
   entities:
