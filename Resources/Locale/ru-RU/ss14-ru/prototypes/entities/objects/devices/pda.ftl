@@ -152,3 +152,5 @@ ent-SyndiAgentPDA = КПК агента синдиката
 ent-ChameleonPDA = КПК пассажира
     .desc = Почему он не серый?
     .suffix = Хамелеон
+ent-WizardPDA = wizard PDA
+    .desc = You hear faint whispers coming from it.
