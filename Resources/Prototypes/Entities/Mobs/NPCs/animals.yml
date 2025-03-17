@@ -2418,6 +2418,10 @@
       groups:
         Brute: -0.07
         Burn: -0.07
+  - type: NightVision
+    isToggle: true
+    color: "#ff6161"
+    playSoundOn: false
 
 - type: entity
   parent: MobSpiderBase
@@ -2533,6 +2537,10 @@
     - type: Bloodstream
       bloodMaxVolume: 150
       bloodReagent: Laughter
+    - type: NightVision
+      isToggle: true
+      color: "#6666ff"
+      playSoundOn: false
 
 - type: entity
   name: wizard spider
