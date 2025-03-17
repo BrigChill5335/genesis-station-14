@@ -723,6 +723,7 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-head
+  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange

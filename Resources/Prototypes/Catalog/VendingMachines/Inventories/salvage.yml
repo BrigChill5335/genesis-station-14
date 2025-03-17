@@ -1,4 +1,4 @@
-﻿- type: vendingMachineInventory
+- type: vendingMachineInventory
   id: SalvageEquipmentInventory
   startingInventory:
     Crowbar: 2
@@ -12,3 +12,5 @@
     WeaponProtoKineticAccelerator: 4
     ClothingBeltSalvageWebbing: 3
     ClothingBeltMiningWebbing: 3
+  contrabandInventory:
+    PlushieCarp: 1
