@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetCBURNLeader
   name: cburn commander helmet
   description: A pressure resistant and fireproof hood worn by special cleanup units.
