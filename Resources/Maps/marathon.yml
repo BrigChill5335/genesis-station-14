@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/02/2025 15:22:02
-  entityCount: 23194
+  time: 03/07/2025 19:59:53
+  entityCount: 23196
 maps:
 - 5350
 grids:
@@ -11558,7 +11558,7 @@ entities:
       pos: 34.5,45.5
       parent: 30
     - type: Door
-      secondsUntilStateChange: -9492.408
+      secondsUntilStateChange: -9541.195
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -44591,6 +44591,13 @@ entities:
     - type: Transform
       pos: -5.5,-50.5
       parent: 30
+- proto: CargoMailTeleporter
+  entities:
+  - uid: 23196
+    components:
+    - type: Transform
+      pos: 27.5,-1.5
+      parent: 30
 - proto: Carpet
   entities:
   - uid: 560
@@ -53355,6 +53362,13 @@ entities:
     components:
     - type: Transform
       pos: 7.503625,43.354942
+      parent: 30
+- proto: ClothingNeckCloakTrans
+  entities:
+  - uid: 3344
+    components:
+    - type: Transform
+      pos: -56.501534,-67.426544
       parent: 30
 - proto: ClothingNeckHeadphones
   entities:
