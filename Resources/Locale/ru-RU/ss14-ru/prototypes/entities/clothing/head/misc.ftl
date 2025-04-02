@@ -39,3 +39,5 @@ ent-WaterDropletHat = капля воды
     .desc = Делает 8-глазых друзей в 8 раз очаровательнее!
 ent-ClothingHeadHatHairflower = цветок для волос
     .desc = Красивый цветок для волос, который можно вставить между прядями волос.
+ent-ClothingHeadPerformerWig = performer's wig
+    .desc = On a closer inspection, it appears that it is made from optic fiber.

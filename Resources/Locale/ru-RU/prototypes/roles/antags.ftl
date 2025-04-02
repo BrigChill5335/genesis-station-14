@@ -1,3 +1,7 @@
+roles-antag-generic-solo-antagonist-name = Solo Antagonist
+roles-antag-generic-free-agent-name = Free Agent
+roles-antag-generic-team-antagonist-name = Team Antagonist
+roles-antag-generic-silicon-antagonist-name = Silicon Antagonist
 roles-antag-syndicate-agent-name = Агент Синдиката
 roles-antag-syndicate-agent-objective = Выполните свои задачи, и не попадитесь.
 roles-antag-syndicate-agent-sleeper-name = Спящий агент Синдиката
@@ -20,6 +24,8 @@ roles-antag-subverted-silicon-name = Взломанный робот
 roles-antag-subverted-silicon-objective = Следуйте своим новым законам и творите бесчинства на станции.
 roles-antag-space-ninja-name = Космический Ниндзя
 roles-antag-space-ninja-objective = Используя маскировку, устройте диверсию на станции, подпитывайтесь от электрических проводов.
+roles-antag-paradox-clone-name = Paradox Clone
+roles-antag-paradox-clone-objective = A freak space-time anomaly has teleported you into another reality! Now you have to find your counterpart and kill and replace them.
 roles-antag-thief-name = Вор
 roles-antag-thief-objective = Пополните свою личную коллекцию имуществом Nanotrasen, не прибегая к насилию.
 roles-antag-dragon-name = Космический дракон

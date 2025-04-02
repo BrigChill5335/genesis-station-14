@@ -6,6 +6,7 @@ gun-disabled = Вы не можете использовать оружие!
 gun-clumsy = Оружие взрывается Вам в лицо!
 gun-set-fire-mode = Установлено на { $mode }
 gun-magazine-whitelist-fail = Это не помещается в оружие!
+gun-magazine-fired-empty = No ammo left!
 # SelectiveFire
 gun-SemiAuto = полуавто
 gun-Burst = очередь

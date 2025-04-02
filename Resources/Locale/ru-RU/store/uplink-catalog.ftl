@@ -317,3 +317,5 @@ uplink-business-card-name = Визитная карточка Синдиката
 uplink-business-card-desc = Визитная карточка, которую можно передать кому-нибудь, чтобы продемонстрировать свою принадлежность к Синдикату, или оставить на месте преступления, чтобы подшутить над детективом. Вы можете приобрести не более трёх таких визиток.
 uplink-fake-mindshield-name = Поддельный щит разума
 uplink-fake-mindshield-desc = Переключаемый имплант, способный имитировать те же сигналы, что и настоящий щит разума. С его помощью можно обмануть визоры, заставив думать, что у вас есть щит разума (имплант марки Nanotrasen не прилагается).
+uplink-smuggler-satchel-name = Smuggler's Satchel
+uplink-smuggler-satchel-desc = A handy, suspicious looking satchel. Just flat enough to fit underneath floor tiles.
