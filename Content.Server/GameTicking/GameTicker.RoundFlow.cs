@@ -438,6 +438,7 @@ namespace Content.Server.GameTicking
             AnnounceRound();
             UpdateInfoText();
             SendRoundStartedDiscordMessage();
+            RaiseLocalEvent(new RoundStartedEvent(RoundId)); // Genesis
 
 #if EXCEPTION_TOLERANCE
             }
