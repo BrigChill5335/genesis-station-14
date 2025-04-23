@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadSuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetModsuitBase
   abstract: true
   name: base MOD helmet
