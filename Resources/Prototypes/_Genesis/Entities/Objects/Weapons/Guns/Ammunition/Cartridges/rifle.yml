@@ -47,12 +47,12 @@
     proto: CartridgeCaselessUniversalVPS
   - type: Sprite
     layers:
-    - state: base-10x24
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag10-1
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
-    magState: mag10
+    magState: mag
     steps: 2
     zeroVisible: false
 
