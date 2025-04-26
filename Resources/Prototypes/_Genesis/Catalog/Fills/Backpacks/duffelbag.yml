@@ -53,7 +53,7 @@
   parent: BriefcaseNT
   id: WeaponCaseAsh9
   name: case with Ash9
-  description: "Case with large caliber assault rifle naming "Ash9""
+  description: Case with large caliber assault rifle naming "Ash9"
   components:
   - type: StorageFill
     contents:
@@ -67,7 +67,7 @@
   parent: BriefcaseNT
   id: WeaponCaseSaiga
   name: case with Saiga
-  description: "Case with shotgun naming "Saiga""
+  description: Case with shotgun naming "Saiga"
   components:
   - type: StorageFill
     contents:
