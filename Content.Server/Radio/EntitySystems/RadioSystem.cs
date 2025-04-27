@@ -32,6 +32,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -206,4 +207,46 @@ public sealed class RadioSystem : EntitySystem
         }
         return false;
     }
+
+    // Genesis-start
+    private string Highlight(string msg)
+    {
+
+        foreach (var department in _departments)
+        {
+            string color = department.Key;
+            foreach (string word in department.Value)
+            {
+                string redex_word = RedexWord(word);
+
+                Regex regex = new Regex($@"\w*{redex_word}\w*", RegexOptions.IgnoreCase);
+                MatchCollection matches = regex.Matches(msg);
+
+                foreach (Match match in matches)
+                {
+                    msg = msg.Replace(match.Value, "[color=#" + color + "]" + match.Value + "[/color]");
+                }
+            }
+        }
+        return msg;
+    }
+
+    private string RedexWord(string word)
+    {
+        string redex_word = "";
+        foreach (char letter in word)
+        {
+            string add_letter = letter.ToString();
+            if (letter == 'л')
+                add_letter = "[лв]";
+            if (letter == 'р')
+                add_letter = "[рв]";
+            if (letter == 'ы')
+                add_letter = "[иы]";
+            redex_word += add_letter + "+";
+        }
+
+        return redex_word.Remove(redex_word.Length - 1);
+    }
+    // Genesis-end
 }
