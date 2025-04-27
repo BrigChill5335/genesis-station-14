@@ -151,10 +151,6 @@
       fireCost: 100
       name: energy-gun-lethal
       state: lethal
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
   - type: Appearance
   - type: GenericVisualizer
     visuals:
