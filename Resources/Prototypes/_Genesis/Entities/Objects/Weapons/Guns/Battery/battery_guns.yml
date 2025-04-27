@@ -418,10 +418,6 @@
       fireCost: 100
       name: energy-gun-lethal
       state: lethal
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
   - type: Appearance
 
 - type: entity
@@ -462,10 +458,6 @@
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
   - type: Appearance
 
 - type: entity
@@ -506,8 +498,4 @@
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
   - type: Appearance
