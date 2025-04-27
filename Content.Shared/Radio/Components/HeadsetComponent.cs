@@ -1,4 +1,5 @@
 using Content.Shared.Inventory;
+using Robust.Shared.Audio;
 
 namespace Content.Shared.Radio.Components;
 
@@ -15,4 +16,12 @@ public sealed partial class HeadsetComponent : Component
 
     [DataField("requiredSlot")]
     public SlotFlags RequiredSlot = SlotFlags.EARS;
+
+    // Genesis-start 
+    [DataField]
+    public Color Color { get; private set; } = Color.Lime;
+
+    //[DataField]
+    //public SoundSpecifier RadioReceiveSoundPath = new SoundPathSpecifier("/Audio/Genesis/Items/Misc/radio_headset_receive.ogg");
+    // Genesis-end 
 }
