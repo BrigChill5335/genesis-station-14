@@ -27,10 +27,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 20
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: false
   - type: Appearance
 
 #Дубинка-шокер киборга
