@@ -1,7 +1,7 @@
 - type: gameMap
   id: CentCommGenesis
   mapName: 'Central Command'
-  mapPath: /Maps/_Genesis/centcomm.yml
+  mapPath: /Maps/centcomm.yml #/Maps/_Genesis/centcomm.yml
   minPlayers: 10
   stations:
     centcomm:
