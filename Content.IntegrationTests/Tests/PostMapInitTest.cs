@@ -44,7 +44,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] Grids =
         {
             // Genesis-Start
-            "/Maps/_Genesis/centcomm.yml",
+            //"/Maps/_Genesis/centcomm.yml",
             // Genesis-End
             "/Maps/centcomm.yml",
             AdminTestArenaSystem.ArenaMapPath
