@@ -198,8 +198,6 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
         }
 
-        RaiseLocalEvent(new RadioSpokeEvent(messageSource, message, ev.Receivers.ToArray())); // Genesis-Edit
-
         if (name != Name(messageSource))
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");
         else
