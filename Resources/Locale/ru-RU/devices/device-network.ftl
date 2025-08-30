@@ -9,8 +9,8 @@ device-frequency-prototype-name-fax = Факс
 device-frequency-prototype-name-basic-device = Базовые устройства
 device-frequency-prototype-name-cyborg-control = Управление киборгами
 device-frequency-prototype-name-robotics-console = Консоль управления робототехникой
-device-frequency-prototype-name-turret = Sentry Turret
-device-frequency-prototype-name-turret-control = Sentry Turret Control
+device-frequency-prototype-name-turret = Охранная турель
+device-frequency-prototype-name-turret-control = Управление охранной турелью
 # prefixes for randomly generated device addresses
 device-address-prefix-vent = Вент-
 device-address-prefix-scrubber = Скр-
@@ -32,12 +32,12 @@ device-address-prefix-heater = НГР-
 device-address-prefix-freezer = ОХЛ-
 device-address-prefix-volume-pump = ОБН-
 device-address-prefix-smes = СМС-
-device-address-prefix-turret = TRT-
+device-address-prefix-turret = ТРЛ-
 # PDAs and terminals
 device-address-prefix-console = Конс-
 device-address-prefix-air-alarm = Возд-
-device-address-examine-message = Адрес устройства: { $address }.
 device-address-prefix-sensor-monitor = МОН-
+device-address-examine-message = Адрес устройства: { $address }.
 # Device net ID names
 device-net-id-private = Частные
 device-net-id-wired = Проводные
