@@ -30,3 +30,5 @@ ent-ClothingEyesGlassesChemical = очки хим-анализа
     .desc = Очки, позволяющие определять химический состав раствора.
 ent-ClothingEyesVisorNinja = визор ниндзя
     .desc = Продвинутый визор, защищающий глаза ниндзя от вспышек света.
+ent-ClothingEyesGlassesNoir = noir-tech glasses
+    .desc = A pair of glasses that simulate what the world looked like before the invention of color.

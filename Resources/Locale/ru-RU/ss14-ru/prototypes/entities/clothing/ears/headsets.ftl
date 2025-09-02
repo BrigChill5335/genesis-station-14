@@ -36,3 +36,5 @@ ent-ClothingHeadsetGrey = гарнитура пассажира
     .desc = Модифицированный модульный интерком, надеваемый на голову. Принимает ключи шифрования.
 ent-ClothingHeadsetFreelance = гарнитура фрилансера
     .desc = Его использует группа блуждающих фрилансеров.
+ent-ClothingHeadsetWizard = wizard headset
+    .desc = A headset used by the dreaded space wizards.
