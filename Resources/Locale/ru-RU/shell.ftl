@@ -6,6 +6,8 @@
 shell-command-success = Команда выполнена.
 shell-invalid-command = Неверная команда.
 shell-invalid-command-specific = Неверная команда { $commandName }.
+shell-can-only-run-from-pre-round-lobby = You can only run this command while the game is in the pre-round lobby.
+shell-can-only-run-while-round-is-active = You can only run this command while the game is in a round.
 shell-cannot-run-command-from-server = Вы не можете выполнить эту команду с сервера.
 shell-only-players-can-run-this-command = Только игроки могут выполнять эту команду.
 shell-must-be-attached-to-entity = Для выполнения этой команды Вы должны быть прикреплены к сущности.
