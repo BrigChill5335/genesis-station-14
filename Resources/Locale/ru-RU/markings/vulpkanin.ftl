@@ -4,12 +4,12 @@ marking-VulpEar-vulp-inner = Уши вульпканина (Внутренняя
 marking-VulpEar = Уши вульпканина
 
 marking-VulpEarFade-vulp = Уши вульпканина (Основной окрас)
-marking-VulpEarFade-vulp-Градиент = Уши вульпканина (Градиент)
+marking-VulpEarFade-vulp-fade = Уши вульпканина (Градиент)
 marking-VulpEarFade-vulp-inner = Уши вульпканина (Внутренняя часть)
 marking-VulpEarFade = Уши вульпканина (Градиент)
 
 marking-VulpEarSharp-vulp = Уши вульпканина (Основной окрас)
-marking-VulpEarSharp-vulp-Резкий переход = Уши вульпканина (Резкий переход)
+marking-VulpEarSharp-vulp-sharp = Уши вульпканина (Резкий переход)
 marking-VulpEarSharp-vulp-inner = Уши вульпканина (Внутренняя часть)
 marking-VulpEarSharp = Уши вульпканина (Резкий переход)
 
@@ -114,7 +114,7 @@ marking-VulpTailVulp-vulp-tip = Хвост вульпканина (Кончик)
 marking-VulpTailVulp = Хвост вульпканина
 
 marking-VulpTailVulpFade-vulp = Хвост вульпканина (Основной окрас)
-marking-VulpTailVulpFade-vulp-Градиент = Хвост вульпканина (Градиент)
+marking-VulpTailVulpFade-vulp-fade = Хвост вульпканина (Градиент)
 marking-VulpTailVulpFade = Хвост вульпканина (Градиент)
 
 ## Chest
@@ -136,17 +136,17 @@ marking-VulpClawsHandRight = Когти (Правая кисть)
 marking-VulpClawsHandLeft-claws_l_hand = Когти
 marking-VulpClawsHandRight-claws_r_hand = Когти
 
-# Гребень
+# Crest
 marking-VulpPointsCrestArmLeft = Гребень (Левое предплечье)
 marking-VulpPointsCrestHandLeft = Гребень (Левая кисть)
 marking-VulpPointsCrestArmRight = Гребень (Правое предплечье)
 marking-VulpPointsCrestHandRight = Гребень (Правая кисть)
-marking-VulpPointsCrestArmLeft-Гребень-arm-l = Гребень
-marking-VulpPointsCrestHandLeft-Гребень-hand-l = Гребень
-marking-VulpPointsCrestArmRight-Гребень-arm-r = Гребень
-marking-VulpPointsCrestHandRight-Гребень-hand-r = Гребень
+marking-VulpPointsCrestArmLeft-crest-arm-l = Гребень
+marking-VulpPointsCrestHandLeft-crest-hand-l = Гребень
+marking-VulpPointsCrestArmRight-crest-arm-r = Гребень
+marking-VulpPointsCrestHandRight-crest-hand-r = Гребень
 
-# Градиент
+# Fade
 marking-VulpPointsFadeArmLeft = Градиент (Левое предплечье)
 marking-VulpPointsFadeHandLeft = Градиент (Левая кисть)
 marking-VulpPointsFadeArmRight = Градиент (Правое предплечье)
@@ -156,7 +156,7 @@ marking-VulpPointsFadeHandLeft-points_fade-hand-l = Градиент
 marking-VulpPointsFadeArmRight-points_fade-arm-r = Градиент
 marking-VulpPointsFadeHandRight-points_fade-hand-r = Градиент
 
-# Резкий переход
+# Sharp
 marking-VulpPointsSharpArmLeft = Резкий переход (Левое предплечье)
 marking-VulpPointsSharpLongArmLeft = Длинный резкий переход (Левое предплечье)
 marking-VulpPointsSharpHandLeft = Резкий переход (Левая кисть)
@@ -180,10 +180,10 @@ marking-VulpPointsCrestLegLeft = Гребень (Левая нога)
 marking-VulpPointsCrestFootLeft = Гребень (Левая ступня)
 marking-VulpPointsCrestLegRight = Гребень (Правая нога)
 marking-VulpPointsCrestFootRight = Гребень (Правая ступня)
-marking-VulpPointsCrestLegLeft-Гребень-leg-l = Гребень
-marking-VulpPointsCrestFootLeft-Гребень-foot-l = Гребень
-marking-VulpPointsCrestLegRight-Гребень-leg-r = Гребень
-marking-VulpPointsCrestFootRight-Гребень-foot-r = Гребень
+marking-VulpPointsCrestLegLeft-crest-leg-l = Гребень
+marking-VulpPointsCrestFootLeft-crest-foot-l = Гребень
+marking-VulpPointsCrestLegRight-crest-leg-r = Гребень
+marking-VulpPointsCrestFootRight-crest-foot-r = Гребень
 marking-VulpPointsFadeLegLeft = Градиент (Левая нога)
 marking-VulpPointsFadeFootLeft = Градиент (Левая ступня)
 marking-VulpPointsFadeLegRight = Градиент (Правая нога)
