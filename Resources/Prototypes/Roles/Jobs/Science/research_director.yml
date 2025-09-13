@@ -36,7 +36,7 @@
     ears: ClothingHeadsetRD
   storage:
     back:
-    - Flash
+    - TelescopicBaton
 
 - type: chameleonOutfit
   id: ResearchDirectorChameleonOutfit
@@ -49,3 +49,6 @@
     neck: ClothingNeckCloakRd
     outerClothing: ClothingOuterCoatRD
     gloves: ClothingHandsGlovesColorPurple
+  storage:
+    back:
+    - TelescopicBaton

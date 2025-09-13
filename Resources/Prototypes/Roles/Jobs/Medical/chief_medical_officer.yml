@@ -40,10 +40,9 @@
   equipment:
     id: CMOPDA
     ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedicalFilled
   storage:
     back:
-    - Flash
+    - TelescopicBaton
 
 - type: chameleonOutfit
   id: ChiefMedicalOfficerChameleonOutfit
@@ -56,3 +55,6 @@
     neck: ClothingCloakCmo
     outerClothing: ClothingOuterCoatLabCmo
     gloves: ClothingHandsGlovesNitrile
+  storage:
+    back:
+    - TelescopicBaton

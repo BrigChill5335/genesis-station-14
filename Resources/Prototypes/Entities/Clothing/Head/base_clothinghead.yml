@@ -276,6 +276,5 @@
   - type: GroupExamine
   - type: HideLayerClothing
     slots:
-    - Hair
     - HeadTop
     - HeadSide

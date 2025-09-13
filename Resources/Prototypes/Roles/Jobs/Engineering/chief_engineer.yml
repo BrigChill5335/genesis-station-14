@@ -43,7 +43,7 @@
     belt: ClothingBeltUtilityEngineering
   storage:
     back:
-    - Flash
+    - TelescopicBaton
 
 - type: chameleonOutfit
   id: ChiefEngineerChameleonOutfit
@@ -56,3 +56,6 @@
     outerClothing: ClothingOuterWinterCE
     gloves: ClothingHandsGlovesColorYellow
     shoes: ClothingShoesBootsMagAdv
+  storage:
+    back:
+    - TelescopicBaton

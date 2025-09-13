@@ -21,7 +21,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: ShaftMiner
-  jobName: job-name-salvagespec
+  jobName: job-name-miner # Genesis-Edit
 
 # Command
 
@@ -443,7 +443,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorPhysician
-  allowSelection: false
+  jobName: job-name-senior-physician # Genesis-Edit
 
 - type: jobIcon
   parent: JobIcon
@@ -451,7 +451,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorOfficer
-  allowSelection: false
+  jobName: job-name-senior-officer # Genesis-Edit
 
 - type: jobIcon
   parent: JobIcon
@@ -459,7 +459,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorEngineer
-  allowSelection: false
+  jobName: job-name-senior-engineer # Genesis-Edit
 
 - type: jobIcon
   parent: JobIcon
@@ -467,7 +467,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorResearcher
-  allowSelection: false
+  jobName: job-name-senior-researcher # Genesis-Edit
 
 # Other
 
