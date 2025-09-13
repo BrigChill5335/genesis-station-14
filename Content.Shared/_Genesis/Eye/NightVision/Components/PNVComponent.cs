@@ -8,7 +8,6 @@ namespace Content.Shared._Genesis.Eye.NightVision.Components;
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class PNVComponent : Component
-public sealed partial class NVToggleAction : InstantActionComponent
 {
     [DataField]
     public EntProtoId ActionProto = "NVToggleAction";
