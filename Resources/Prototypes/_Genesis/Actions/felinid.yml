@@ -3,7 +3,7 @@
   name: action-name-eat-mouse
   description: action-description-eat-mouse
   components:
-    - type: InstantAction
+    - type: Action
       useDelay: 10
       icon: Genesis/Icons/verbiconfangs.png
       event: !type:EatMouseActionEvent
@@ -13,7 +13,7 @@
   name: hairball-action
   description: hairball-action-desc
   components:
-    - type: InstantAction
+    - type: Action
 #      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
       priority: -10
       event: !type:HairballActionEvent
