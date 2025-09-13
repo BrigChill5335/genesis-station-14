@@ -3,7 +3,7 @@
   name: centcom-ftl-action-name
   description: centcom-ftl-action-description
   components:
-    - type: InstantAction
+    - type: Action
       useDelay: 180
 #      icon: Backmen/Actions/CCAuth.png
       event: !type:CentcomFtlAction
