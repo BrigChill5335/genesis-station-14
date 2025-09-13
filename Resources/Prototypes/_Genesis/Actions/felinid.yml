@@ -6,6 +6,7 @@
     - type: Action
       useDelay: 10
       icon: Genesis/Icons/verbiconfangs.png
+  - type: InstantAction
       event: !type:EatMouseActionEvent
 
 - type: entity
@@ -16,9 +17,10 @@
     - type: Action
 #      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
       priority: -10
-      event: !type:HairballActionEvent
       charges: 1
       useDelay: 30
+  - type: InstantAction
+      event: !type:HairballActionEvent
 
 - type: entity
   id: ActionWoundLicking
