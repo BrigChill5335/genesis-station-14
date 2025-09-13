@@ -1,4 +1,6 @@
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
+<div class="header" align="center">  
+<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">  
+</div>
 
 Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
@@ -8,11 +10,20 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Ссылки
 
+<div class="header" align="center">  
+
 [Сайт игры](https://spacestation14.io/) | [Workbench Discord](https://discord.gg/Dxqz5gy) | [Бриг Discord](https://discord.gg/UEQDBC2TEj) | [Workbench Revolt](https://rvlt.gg/wcYASVKF) | [Steam игры](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Скачать лаунчер](https://spacestation14.io/about/nightlies/) | [GitLab](https://gitlab.workbench.network/Workbench-Team/space-station-14) | [GitHub](https://github.com/Workbench-Team/space-station-14)
+
+</div>
 
 ## Документация
 
-На официальном сайте с [документацией](https://docs.spacestation14.io/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом. Также имеется много информации для начинающих разработчиков.
+На официальном сайте с [документацией](https://docs.spacestation14.com/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом.
+Помимо этого, ознакомьтесь с этими ресурсами для получения информации о лицензии и авторстве:
+- [Общая атрибуция Robust](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)  
+- [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
+
+Также имеется множество ресурсов для новых контрибьюторов проекта.
 
 ## Вклад
 
@@ -34,9 +45,17 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Самостоятельная сборка
 
-1. Склонируйте этот репозиторий.
-2. Запустите скрипт `RUN_THIS.py` для инициализации субмодулей и скачивания движка.
-3. Соберите решение через Visual Studio или dotnet в терминале.
+1. Склонируйте этот репозиторий:
+```shell
+git clone https://github.com/Workbench-Team/space-station-14.git
+```
+2. Зайдите в папку проекта и запустите скрипт `RUN_THIS.py` для инициализации субмодулей и скачивания движка:
+```shell
+cd space-station-14
+python RUN_THIS.py
+```
+3. Соберите решение:
+Создайте сборку через Visual Studio или `dotnet build` в терминале.
 
 [Более детальная инструкция для сборки.](https://docs.spacestation14.com/en/general-development/setup.html)
 
@@ -46,4 +65,5 @@ Space Station 14 это ремейк SS13, который работает на 
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не имеют иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://gitlab.workbench.network/Workbench-Team/space-station-14/blob/master-ru/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
-Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если Вы хотите использовать этот проект в коммерческих целях.
+> [!NOTE]
+> Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если Вы хотите использовать этот проект в коммерческих целях.

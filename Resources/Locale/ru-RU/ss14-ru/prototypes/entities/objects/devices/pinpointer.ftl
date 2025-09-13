@@ -9,3 +9,6 @@ ent-PinpointerUniversal = универсиальный поисковый нав
 ent-PinpointerStation = поисковый навигатор станции
     .desc = Портативное устройство слежения, указывающее направление к любой ближайшей станции.
     .suffix = Станция
+ent-PinpointerMothership = core pinpointer
+    .desc = A handheld tracking device that leads to the direction of the Mothership core.
+    .suffix = Mothership

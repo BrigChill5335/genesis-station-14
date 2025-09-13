@@ -21,6 +21,7 @@ job-name-hop = глава персонала
 job-name-captain = капитан
 job-name-serviceworker = сервисный работник
 job-name-centcomoff = представитель ЦК
+job-name-cburn = агент карантинной службы ЦК
 job-name-reporter = репортёр
 job-name-musician = музыкант
 job-name-librarian = библиотекарь
@@ -33,6 +34,7 @@ job-name-botanist = ботаник
 job-name-bartender = бармен
 job-name-passenger = ассистент
 job-name-salvagespec = утилизатор
+job-name-station-ai = станционный ИИ
 job-name-qm = квартирмейстер
 job-name-cargotech = грузчик
 job-name-chef = шеф-повар
@@ -46,6 +48,7 @@ job-name-ertjanitor = уборщик ОБР
 job-name-boxer = боксёр
 job-name-zookeeper = работник зоопарка
 job-name-visitor = посетитель
+job-name-cluwne = клувень
 # unused jobs
 # these are required for the agent ID job icon tooltips
 # I am keeping them for roleplaying opportunities

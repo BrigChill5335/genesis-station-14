@@ -11,3 +11,6 @@ changelog-button = Обновления
 changelog-button-new-entries = Обновления (!)
 changelog-tab-title-Changelog = Изменения
 changelog-tab-title-Admin = Админ
+changelog-tab-title-Maps = Maps
+cmd-changelog-desc = Opens the changelog.
+cmd-changelog-help = Usage: changelog
