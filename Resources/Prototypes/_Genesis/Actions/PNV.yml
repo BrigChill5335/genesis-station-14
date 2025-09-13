@@ -8,6 +8,7 @@
     icon:
       sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
       state: icon
+  - type: InstantAction
     event: !type:NvInstantActionEvent
 
 - type: entity
@@ -20,4 +21,5 @@
     icon:
       sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
       state: icon
+  - type: InstantAction
     event: !type:NvInstantActionEvent
