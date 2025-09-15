@@ -111,7 +111,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
     }
     // end-genesis: centcom
 
-    private void OnHeadAssigned(EntityUid uid, PickRandomHeadComponent comp, ref ObjectiveAssignedEvent args)
+    private void OnRandomPersonAssigned(Entity<PickRandomPersonComponent> ent, ref ObjectiveAssignedEvent args)
     {
         // invalid prototype
         if (!TryComp<TargetObjectiveComponent>(uid, out var target))
