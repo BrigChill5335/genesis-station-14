@@ -45,7 +45,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
         args.Progress = GetProgress(target.Value, comp.RequireDead, comp.RequireMaroon);
     }
 
-    private float GetProgress(EntityUid target, bool requireDead, bool requireMaroon)
+    private void OnPersonAssigned(EntityUid uid, PickRandomPersonComponent comp, ref ObjectiveAssignedEvent args)
     {
         // invalid objective prototype
         if (!TryComp<TargetObjectiveComponent>(uid, out var target))
@@ -155,8 +155,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
         _target.SetTarget(uid, _random.Pick(allHeads), target);
     }
 
-    private float GetProgress(EntityUid target, bool requireDead)
-
+    private float GetProgress(EntityUid target, bool requireDead, bool requireMaroon)
     {
         // deleted or gibbed or something, counts as dead
         if (!TryComp<MindComponent>(target, out var mind) || mind.OwnedEntity == null)
