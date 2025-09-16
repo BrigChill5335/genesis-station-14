@@ -58,7 +58,7 @@ namespace Content.Server.Felinid
             // Ensure components
             if (
                 !TryComp<WoundLickingComponent>(performer, out var woundLicking) ||
-                !TryComp<BloodstreamComponent>(target, out var bloodstream) ||
+                !TryComp<BloodstreamComponent>(target, out var blood) ||
                 !TryComp<MobStateComponent>(target, out var mobState)
             )
                 return;
@@ -146,7 +146,7 @@ namespace Content.Server.Felinid
             {
                 return;
             }
-            if (TryComp<BloodstreamComponent>(args.Args.Target, out var bloodstream))
+            if (TryComp<BloodstreamComponent>(args.Args.Target, out var blood))
                 LickWound(uid, args.Args.Target.Value, bloodstream, comp);
         }
 
