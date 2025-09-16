@@ -1,6 +1,3 @@
-ent-PrisonerIDCard = заключённого
-    .desc = { ent-IDCardStandard.desc }
-
 ent-UnaffiliatedIDCard = неизвестная ID карта
     .desc = Карточка с указанием имени и других идентифицирующих данных.
 
