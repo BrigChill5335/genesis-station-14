@@ -1,6 +1,5 @@
 //using Content.Server.Disease.Components;
 //using Content.Server.Disease;
-using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Server.Popups;
 using Content.Shared.DoAfter;
@@ -150,7 +149,7 @@ namespace Content.Server.Felinid
                 LickWound(uid, args.Args.Target.Value, bloodstream, comp);
         }
 
-        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent bloodstream, WoundLickingComponent comp)
+        private void LickWound(EntityUid performer, EntityUid target, BloodstreamComponent blood, WoundLickingComponent comp)
         {
             // The more you heal, the more is disease chance
             // For 15 maxHeal and 50% diseaseChance
