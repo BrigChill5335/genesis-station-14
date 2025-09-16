@@ -234,7 +234,7 @@
     unequipSound: /Audio/Genesis/Items/ballout.ogg
 
 - type: entity
-  parent: ClothingHeadHelmetHardsuitEngineeringWhite
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetModsuitCE
   name: chief engineer modsuit helmet
   description: A helmet for a MODsuit. An atmospheric-resistant suit by Nakamura Engineering, offering extreme heat resistance compared to the engineer suit.
@@ -252,6 +252,17 @@
     clothingPrototype: ClothingShoesBootsMagAdv
     slot: shoes
     requiredSlot: head
+  - type: PointLight # Corvax-Resprite
+    color: "#e6aa5c"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: FireProtection
+    reduction: 0.2
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitRd
