@@ -1,7 +1,6 @@
-using Content.Shared.Actions;
+using Content.Shared.Actions.Components;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared._Genesis.Eye.NightVision.Components;
 
@@ -10,7 +9,7 @@ namespace Content.Shared._Genesis.Eye.NightVision.Components;
 public sealed partial class PNVComponent : Component
 {
     [DataField]
-    public EntProtoId ActionProto = "NVToggleAction";
+    public EntProtoId<InstantActionComponent> ActionProto = "NVToggleAction";
 
     [DataField]
     public EntityUid? ActionContainer;
