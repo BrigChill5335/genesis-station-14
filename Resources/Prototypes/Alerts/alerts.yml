@@ -25,6 +25,7 @@
     - category: Thirst
     - alertType: Magboots
     - alertType: Rooted
+    - alertType: Crawling # Genesis-Edit
     - alertType: Pacified
     - alertType: Stealthy
 

@@ -69,7 +69,7 @@
     eyes: ClothingEyesHudCommand
   storage:
     back:
-    - Flash
+    - TelescopicBaton
 
 - type: chameleonOutfit
   id: HeadOfPersonnelChameleonOutfit
@@ -81,4 +81,6 @@
     mask: ClothingMaskNeckGaiterRed
     neck: ClothingNeckCloakHop
     outerClothing: ClothingOuterWinterHoP
-
+  storage:
+    back:
+    - TelescopicBaton

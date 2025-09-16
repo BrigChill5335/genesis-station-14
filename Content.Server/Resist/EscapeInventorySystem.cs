@@ -9,6 +9,7 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Resist;
 using Content.Shared.Storage;
 using Robust.Shared.Containers;
+using Content.Shared._Genesis.Carrying;
 
 namespace Content.Server.Resist;
 
@@ -19,6 +20,7 @@ public sealed class EscapeInventorySystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+    [Dependency] private readonly SharedCarryingSystem _carryingSystem = default!;
 
     public override void Initialize()
     {
@@ -56,7 +58,7 @@ public sealed class EscapeInventorySystem : EntitySystem
             AttemptEscape(uid, container.Owner, component);
     }
 
-    private void AttemptEscape(EntityUid user, EntityUid container, CanEscapeInventoryComponent component, float multiplier = 1f)
+    public void AttemptEscape(EntityUid user, EntityUid container, CanEscapeInventoryComponent component, float multiplier = 1f)
     {
         if (component.IsEscaping)
             return;

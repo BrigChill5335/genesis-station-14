@@ -155,7 +155,7 @@ namespace Content.Server.GameTicking
             SpawnPlayer(player, character, station, jobId, lateJoin, silent);
         }
 
-        private void SpawnPlayer(ICommonSession player,
+        public void SpawnPlayer(ICommonSession player,
             HumanoidCharacterProfile character,
             EntityUid station,
             string? jobId = null,
@@ -266,6 +266,11 @@ namespace Content.Server.GameTicking
 
             _playTimeTrackings.PlayerRolesChanged(player);
 
+// Genesis-Edit
+            if (jobPrototype.AlwaysUseSpawner)
+                lateJoin = false;
+// Genesis-Edit
+
             var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character);
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
@@ -283,7 +288,7 @@ namespace Content.Server.GameTicking
                     _chatSystem.DispatchStationAnnouncement(station,
                         Loc.GetString("latejoin-arrival-announcement-special",
                             ("character", MetaData(mob).EntityName),
-                            ("gender", character.Gender), // Starshine-LastnameGender
+                            ("gender", character.Gender),
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
@@ -295,7 +300,7 @@ namespace Content.Server.GameTicking
                     _chatSystem.DispatchStationAnnouncement(station,
                         Loc.GetString("latejoin-arrival-announcement",
                             ("character", MetaData(mob).EntityName),
-                            ("gender", character.Gender), // Starshine-LastnameGender
+                            ("gender", character.Gender),
                             ("entity", mob),
                             ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
                         Loc.GetString("latejoin-arrival-sender"),
