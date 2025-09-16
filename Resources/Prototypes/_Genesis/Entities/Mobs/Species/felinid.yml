@@ -50,7 +50,7 @@
   - type: Stamina
     critThreshold: 85
 #  - type: PseudoItem  - when backmen reborn and fix that xddd
-  - type: WoundLicking
+#  - type: WoundLicking - u know starshine((((( 6 months last commit in arumoon-server just Changelog ((((((((((
   - type: OwOAccent
   - type: Vocal
     sounds:
