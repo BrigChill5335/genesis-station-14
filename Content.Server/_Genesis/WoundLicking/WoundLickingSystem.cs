@@ -14,7 +14,7 @@ using Content.Shared.Body.Components;
 using WoundLickingActionEvent = Content.Shared._Genesis.WoundLicking.WoundLickingActionEvent;
 using WoundLickingDoAfterEvent = Content.Shared._Genesis.WoundLicking.WoundLickingDoAfterEvent;
 
-namespace Content._Genesis.Server.Felinid
+namespace Content.Server._Genesis.Felinid
 {
     /// <summary>
     /// "Lick your or other felinid wounds. Reduce bleeding, but unsanitary and can cause diseases."
