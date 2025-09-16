@@ -84,7 +84,7 @@
     state: icon
 
 - type: entity
-  parent: DrinkGlassBase
+  parent: DrinkGlass
   id: DrinkKvassGlass
   suffix: kvass
   components:
