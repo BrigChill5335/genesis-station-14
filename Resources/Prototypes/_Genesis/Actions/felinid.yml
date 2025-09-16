@@ -1,15 +1,29 @@
+﻿- type: entity
+  id: ActionEatMouse
+  name: action-name-eat-mouse
+  description: action-description-eat-mouse
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    checkCanInteract: false
+    icon: Genesis/Icons/verbiconfangs.png
+  - type: InstantAction
+    event: !type:EatMouseActionEvent
+
 - type: entity
   id: ActionHairball
   name: hairball-action
   description: hairball-action-desc
   components:
-    - type: Action
+  - type: LimitedCharges
+    maxCharges: 1
+  - type: Action
+    checkCanInteract: false
+    icon:
 #      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
-      priority: -10
-      charges: 1
-      useDelay: 30
+    useDelay: 30
   - type: InstantAction
-      event: !type:HairballActionEvent
+    event: !type:HairballActionEvent
 
 - type: entity
   id: ActionWoundLicking
