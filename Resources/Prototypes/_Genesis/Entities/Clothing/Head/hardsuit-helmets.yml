@@ -1072,7 +1072,7 @@
 #Star Wars
 #Republic Clone Phase 1 Hardsuit
 - type: entity
-  parent: ClothingHeadHelmetHardsuitBasic
+  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitRepublicClonePhase1
   name: republic clone's hardsuit helmet phase 1
   description: Special hardsuit helmet phase 1, made for the republic clones.
