@@ -2,7 +2,7 @@ using System.Threading;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Server.Felinid
+namespace Content._Genesis.Server.Felinid
 {
     [RegisterComponent]
     [Access(typeof(WoundLickingSystem))]
