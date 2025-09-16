@@ -26,10 +26,14 @@
   id: ActionWoundLicking
   name: Lick Wound
   description: Stop bleeding by licking your wounds
+  noSpawn: true
   components:
-  - type: EntityTargetAction
-    whitelist: { components: [ HumanoidAppearance ] }
-    interactOnMiss: false
+  - type: Action
     icon: { sprite: Mobs/Species/Human/organs.rsi, state: tongue }
     priority: -1
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - HumanoidAppearance
     event: !type:WoundLickingActionEvent
