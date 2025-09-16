@@ -19,10 +19,10 @@
     - state: sec
     - state: sec-icon
   - type: ItemBorgModule
-    items:
-    - FlashSecBorg
-    - StunbatonSecBorg
-    - WeaponLaserSecBorg
+    hands:
+    - item: FlashSecBorg
+    - item: StunbatonSecBorg
+    - item: WeaponLaserSecBorg
 
 - type: entity
   id: BorgModuleMiningCombat
@@ -34,9 +34,9 @@
     - state: cargo
     - state: icon-mining
   - type: ItemBorgModule
-    items:
-    - WeaponProtoKineticAcceleratorBorg
-    - WeaponCrusherDagger
+    hands:
+    - item: WeaponProtoKineticAcceleratorBorg
+    - item: WeaponCrusherDagger
 
 - type: entity
   id: BorgModuleJetpack
@@ -48,8 +48,10 @@
     - state: cargo
     - state: icon-mining
   - type: ItemBorgModule
-    items:
-    - JetpackVoidFilled
+    hands:
+    - item: JetpackVoidFilled
+  - type: BorgModuleIcon
+    icon: { sprite: Objects/Tanks/Jetpacks/void.rsi, state: icon }
 
 - type: entity
   id: BorgModuleStandard
@@ -61,7 +63,7 @@
     - state: generic
     - state: icon-fire-extinguisher
   - type: ItemBorgModule
-    items:
-    - CrowbarBorg
-    - FireExtinguisherBorg
-    - HyposprayBorgStandard
+    hands:
+    - item: CrowbarBorg
+    - item: FireExtinguisherBorg
+    - item: HyposprayBorgStandard
