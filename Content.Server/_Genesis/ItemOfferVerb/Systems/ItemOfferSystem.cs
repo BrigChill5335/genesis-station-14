@@ -35,7 +35,7 @@ public sealed class ItemOfferSystem : EntitySystem
         SubscribeLocalEvent<ItemReceiverComponent, ItemOfferAlertEvent>(OnItemOffserAlertClicked);
 
         CommandBinds.Builder
-            .Bind(KeyFunctions220.ItemOffer,
+            .Bind(KeyFunctionsGenesis.ItemOffer,
                 new PointerInputCmdHandler(HandleItemOfferKey))
             .Register<ItemOfferSystem>();
     }
