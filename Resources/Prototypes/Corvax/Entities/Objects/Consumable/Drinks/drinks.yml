@@ -95,8 +95,9 @@
           reagents:
             - ReagentId: Kvass
               Quantity: 30
-    - type: Sprite
+    - type: Icon
       sprite: Corvax/Objects/Consumable/Drinks/kvass.rsi
+      state: icon
 
 - type: entity
   parent: DrinkGlass
