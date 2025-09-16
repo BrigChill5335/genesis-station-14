@@ -1,11 +1,7 @@
-﻿namespace Content.Server._Genesis.Abilities.Felinid;
-{
-    [RegisterComponent]
-    public sealed partial class HairballComponent : Component
-    {
-        public string SolutionName = "hairball";
+namespace Content.Server._Genesis.Abilities.Felinid;
 
-        [DataField]
-        public float VomitChance = 0.2f;
-    }
+[RegisterComponent]
+public sealed partial class HairballComponent : Component
+{
+    public string SolutionName = "hairball";
 }
