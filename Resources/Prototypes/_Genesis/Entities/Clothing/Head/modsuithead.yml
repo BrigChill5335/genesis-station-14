@@ -222,7 +222,7 @@
     color: "#ffeead"
 
 - type: entity
-  parent: ClothingHeadHelmetHardsuitBasic
+  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetModsuitCaptain
   name: captain modsuit helmet
   components:
