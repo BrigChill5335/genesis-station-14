@@ -11,6 +11,7 @@ using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Server.Medical;
 using Content.Server.Popups;
+using Content.Shared._Genesis.Psionics.Events;
 using Robust.Shared.Random;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
