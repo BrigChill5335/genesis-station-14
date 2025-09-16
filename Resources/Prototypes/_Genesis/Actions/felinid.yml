@@ -1,14 +1,3 @@
-﻿- type: entity
-  id: ActionEatMouse
-  name: action-name-eat-mouse
-  description: action-description-eat-mouse
-  components:
-    - type: Action
-      useDelay: 10
-      icon: Genesis/Icons/verbiconfangs.png
-  - type: InstantAction
-      event: !type:EatMouseActionEvent
-
 - type: entity
   id: ActionHairball
   name: hairball-action
