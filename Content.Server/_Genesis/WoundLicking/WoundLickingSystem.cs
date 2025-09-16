@@ -11,8 +11,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using System.Linq;
 using Content.Shared.Body.Components;
-using WoundLickingActionEvent = Content.Shared.Starshine.WoundLicking.WoundLickingActionEvent;
-using WoundLickingDoAfterEvent = Content.Shared.Starshine.WoundLicking.WoundLickingDoAfterEvent;
+using WoundLickingActionEvent = Content.Shared._Genesis.WoundLicking.WoundLickingActionEvent;
+using WoundLickingDoAfterEvent = Content.Shared._Genesis.WoundLicking.WoundLickingDoAfterEvent;
 
 namespace Content.Server.Felinid
 {
