@@ -96,7 +96,7 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - SeniorEngineer # Genesis-Station
+  - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
 
@@ -108,7 +108,7 @@
   roles:
   - Chemist
   - ChiefMedicalOfficer
-  - SeniorPhysician # Genesis-Station
+  - SeniorPhysician
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
@@ -124,7 +124,7 @@
   - HeadOfSecurity
   - SecurityCadet
   - Pilot # Corvax-Pilot Edit by Genesis
-  - SeniorOfficer # Genesis-Station
+  - SeniorOfficer
   - SecurityOfficer
   - Detective
   - Brigmedic # Genesis-Station
@@ -137,7 +137,7 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
-  - SeniorResearcher # Genesis-Station
+  - SeniorResearcher
   - Scientist
   - Roboticist # Genesis-Station
   - ResearchAssistant
