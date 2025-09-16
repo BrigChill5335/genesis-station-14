@@ -6,7 +6,7 @@ using Content.Server._Genesis.ItemOfferVerb.Components;
 using Content.Shared.Alert;
 using Content.Shared.Hands.Components;
 using Content.Shared.Popups;
-using Content.Shared.SS220.ItemOfferVerb;
+using Content.Shared._Genesis.ItemOfferVerb;
 using Content.Shared.Verbs;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
