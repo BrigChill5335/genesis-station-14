@@ -30,3 +30,11 @@
     back:
     - PenCentcom
     - BoxFolderBlack
+
+- type: chameleonOutfit
+  id: CentComOfficialOutfit
+  job: CentComOfficial
+  hasMindShield: true
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+    mask: ClothingMaskGasCentcom
