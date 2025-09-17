@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: ActionEatMouse
-  name: action-name-eat-mouse
-  description: action-description-eat-mouse
+  name: eat mouse
+  description: Take the mouse in your hand and remove the batteries and charger from it.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -12,8 +12,8 @@
 
 - type: entity
   id: ActionHairball
-  name: hairball-action
-  description: hairball-action-desc
+  name: cough up
+  description: Cleanse your digestive system and get a cool hairball to throw at people.
   components:
   - type: LimitedCharges
     maxCharges: 1
@@ -26,7 +26,7 @@
 
 - type: entity
   id: ActionWoundLicking
-  name: Lick Wound
+  name: lick wound
   description: Stop bleeding by licking your wounds
   components:
   - type: Action
