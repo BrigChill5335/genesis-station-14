@@ -35,3 +35,11 @@
   storage:
     back:
     - RubberStampCentcom
+
+- type: chameleonOutfit
+  id: CentComOperatorOutfit
+  job: CentComOperator
+  hasMindShield: true
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+    mask: ClothingMaskGasCentcom
