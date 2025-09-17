@@ -37,6 +37,7 @@
 - type: chameleonOutfit
   id: CentComDoctorChameleonOutfit
   job: CentralCommandMedicalDoctor
+  hasMindShield: true
   equipment:
     head: ClothingHeadNurseHat
     eyes: ClothingEyesHudMedical
