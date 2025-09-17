@@ -28,6 +28,7 @@
 - type: chameleonOutfit
   id: CentComCargoChameleonOutfit
   job: CentralCommandCargoTechnician
+  hasMindShield: true
   equipment:
     head: ClothingHeadHatCargosoft
     eyes: ClothingEyesGlassesCheapSunglasses
