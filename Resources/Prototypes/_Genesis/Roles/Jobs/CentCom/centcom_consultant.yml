@@ -68,3 +68,13 @@
     - BoxSurvival
     - Flash
     - TelescopicBaton
+
+- type: chameleonOutfit
+  id: ConsultantChameleonOutfit
+  job: CentComConsultant
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatCentcomConsultantCap
+    eyes: ClothingEyesGlassesSunglassesModified
+    gloves: ClothingHandsGlovesLatex
+    outerClothing: ClothingOuterCoatCentcomConsultant
