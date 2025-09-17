@@ -57,6 +57,3 @@
     outerClothing: ClothingOuterWinterQM
     neck: ClothingNeckCloakQm
     gloves: ClothingHandsKnuckleDustersQM
-  storage:
-    back:
-    - TelescopicBaton
