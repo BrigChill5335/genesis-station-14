@@ -78,6 +78,18 @@ namespace Content.IntegrationTests.Tests
         /// </remarks>
         private static readonly string[] DoNotMapWhitelist =
         {
+            // Genesis-Start
+            "/Maps/_Genesis/Shuttles/beetle.yml",
+            "/Maps/_Genesis/Shuttles/cburn_ert_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/centcom_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/cleaner_ert_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/death_squad_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/engineer_ert_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/medical_ert_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/mining_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/officer_ert_shuttle.yml",
+            "/Maps/_Genesis/Shuttles/ferryman.yml",
+            // Genesis-End
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**" // admin gaming
         };
