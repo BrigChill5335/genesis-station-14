@@ -29,7 +29,6 @@
   id: ActionWoundLicking
   name: Lick Wound
   description: Stop bleeding by licking your wounds
-  noSpawn: true
   components:
   - type: Action
     icon: { sprite: Mobs/Species/Human/organs.rsi, state: tongue }
