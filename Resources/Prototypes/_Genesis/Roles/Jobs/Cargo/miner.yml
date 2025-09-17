@@ -24,3 +24,12 @@
   equipment:
     id: MinerPDA
     ears: ClothingHeadsetMining
+
+- type: chameleonOutfit
+  id: MinerChameleonOutfit
+  job: Miner
+  equipment:
+    mask: ClothingMaskGasExplorer
+    outerClothing: ClothingOuterWinterMiner
+    neck: ClothingNeckScarfStripedBrown
+    gloves: ClothingHandsGlovesColorBlack
