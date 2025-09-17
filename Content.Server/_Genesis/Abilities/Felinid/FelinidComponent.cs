@@ -13,7 +13,7 @@ public sealed partial class FelinidComponent : Component
     public EntProtoId HairballPrototype = "Hairball";
 
     [DataField]
-    public EntProtoId HairballAction = "HairballAction";
+    public EntProtoId HairballAction = "ActionHairball";
 
     [DataField]
     public EntityUid? HairballActionEntity;
