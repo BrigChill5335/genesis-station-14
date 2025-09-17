@@ -11,8 +11,8 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTLeaderGamma
 
@@ -31,8 +31,8 @@
       prototypes: [ ERTLeaderGammaGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
 
 ## ERT Janitor
 
@@ -47,8 +47,8 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTJanitorGamma
 
@@ -64,8 +64,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTJanitorGammaGear ]
 
@@ -82,8 +82,8 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTEngineerGamma
 
@@ -99,8 +99,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTEngineerGammaGear ]
 
@@ -117,8 +117,8 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTSecurityGamma
 
@@ -134,8 +134,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTSecurityGammaGear ]
 
@@ -152,8 +152,8 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTMedicalGamma
 
@@ -169,8 +169,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTMedicalGammaGear ]
 
@@ -188,8 +188,8 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTLeaderDelta
 
@@ -208,8 +208,8 @@
       prototypes: [ ERTLeaderDeltaGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
 
 ## ERT Janitor
 
@@ -224,8 +224,8 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTJanitorGamma
 
@@ -241,8 +241,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTJanitorDeltaGear ]
 
@@ -259,8 +259,8 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTEngineerDelta
 
@@ -276,8 +276,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTEngineerDeltaGear ]
 
@@ -294,8 +294,8 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTSecurityDelta
 
@@ -311,8 +311,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTSecurityDeltaGear ]
 
@@ -329,8 +329,8 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTMedicalDelta
 
@@ -346,8 +346,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTMedicalDeltaGear ]
 
@@ -364,8 +364,8 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTLeaderBravo
 
@@ -384,8 +384,8 @@
       prototypes: [ ERTLeaderBravoGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
 
 ## ERT Janitor
 
@@ -400,8 +400,8 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTJanitorBravo
 
@@ -417,8 +417,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTJanitorBravoGear ]
 
@@ -435,8 +435,8 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTEngineerBravo
 
@@ -452,8 +452,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTEngineerBravoGear ]
 
@@ -470,8 +470,8 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTSecurityBravo
 
@@ -487,8 +487,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTSecurityBravoGear ]
 
@@ -505,8 +505,8 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTMedicalBravo
 
@@ -522,8 +522,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTMedicalBravoGear ]
 
@@ -540,8 +540,8 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTLeaderCharlie
 
@@ -560,8 +560,8 @@
       prototypes: [ ERTLeaderCharlieGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
 
 ## ERT Janitor
 
@@ -576,8 +576,8 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTJanitorCharlie
 
@@ -593,8 +593,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTJanitorCharlieGear ]
 
@@ -611,8 +611,8 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTEngineerCharlie
 
@@ -628,8 +628,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTEngineerCharlieGear ]
 
@@ -646,8 +646,8 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTSecurityCharlie
 
@@ -663,8 +663,8 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTSecurityCharlieGear ]
 
@@ -681,8 +681,8 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: RandomHumanoidSpawner
       settings: ERTMedicalCharlie
 
@@ -698,7 +698,7 @@
         settings: short
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
     - type: Loadout
       prototypes: [ ERTMedicalCharlieGear ]
