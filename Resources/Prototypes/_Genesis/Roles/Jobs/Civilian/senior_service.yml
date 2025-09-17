@@ -24,3 +24,13 @@
     #back:
     #- Stuff
 
+- type: chameleonOutfit
+  id: SeniorServiceChameleonOutfit
+  job: SeniorService
+  equipment:
+    head: ClothingHeadHatBowlerHat
+    eyes: ClothingEyesGlassesSunglasses
+    mask: ClothingMaskGas
+    neck: ClothingNeckScarfStripedBrown
+    outerClothing: ClothingOuterVest
+    gloves: ClothingHandsGlovesColorBlack
