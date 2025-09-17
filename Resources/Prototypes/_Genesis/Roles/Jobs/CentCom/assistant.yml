@@ -27,3 +27,10 @@
   #storage:
     #back:
     #- Stuff
+
+- type: chameleonOutfit
+  id: CentComAssistantChameleonOutfit
+  job: CentralCommandAssistant
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+    neck: ClothingNeckMantle
