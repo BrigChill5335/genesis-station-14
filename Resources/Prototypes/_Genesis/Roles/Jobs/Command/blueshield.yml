@@ -50,3 +50,13 @@
     - BoxSurvivalBlueShield
     - Flash
     - HandheldCrewMonitor
+
+- type: chameleonOutfit
+  id: BlueShieldChameleonOutfit
+  job: BlueShield
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBlueShieldBeret
+    eyes: ClothingEyesGlassesSunglassesBlueShield
+    mask: ClothingMaskGasBlueShield
+    neck: ClothingNeckCloakBlueShield
