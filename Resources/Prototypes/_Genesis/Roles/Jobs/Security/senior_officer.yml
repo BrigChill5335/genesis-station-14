@@ -36,3 +36,16 @@
     eyes: ClothingEyesGlassesSecurity
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
+
+- type: chameleonOutfit
+  id: SeniorOfficerChameleonOutfit
+  job: SeniorOfficer
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretSecurity
+    mask: ClothingMaskGasSecurity
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+    neck: Dinkystar
+    belt: ClothingBeltSecurity
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJack
