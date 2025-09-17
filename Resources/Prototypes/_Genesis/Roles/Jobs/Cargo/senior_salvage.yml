@@ -31,3 +31,12 @@
     shoes: ClothingShoesBootsCombatFilled
     id: SeniorSalvagePDA
     ears: ClothingHeadsetCargo
+
+- type: chameleonOutfit
+  id: SeniorSalvageChameleonOutfit
+  job: SeniorSalvage
+  equipment:
+    head: ClothingHeadHatBeretSalvage
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGasExplorer
+    gloves: ClothingHandsGlovesColorBlack
