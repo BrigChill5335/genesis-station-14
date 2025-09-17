@@ -19,3 +19,14 @@
   equipment:
     id: SeniorResearcherPDA
     ears: ClothingHeadsetScience
+
+- type: chameleonOutfit
+  id: SeniorResearcherOutfit
+  job: SeniorResearcher
+  equipment:
+    head: ClothingHeadHatBeretRND
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGas
+    jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+    outerClothing: ClothingOuterCoatLabSeniorResearcher
+    gloves: ClothingHandsGlovesLatex
