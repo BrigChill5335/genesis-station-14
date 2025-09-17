@@ -49,6 +49,3 @@
     neck: ClothingNeckCloakRd
     outerClothing: ClothingOuterCoatRD
     gloves: ClothingHandsGlovesColorPurple
-  storage:
-    back:
-    - TelescopicBaton
