@@ -369,6 +369,40 @@
 
 # Senior
 - type: loadoutGroup
+  id: SeniorResearcherHead
+  name: loadout-group-head
+  minLimit: 0
+  loadouts:
+  - RoboticistCap
+  - SkullBandana
+  - SeniorResearcherBeret
+  - SeniorResearcherBeretAlt
+
+- type: loadoutGroup
+  id: SeniorPhysicianHead
+  name: loadout-group-head
+  minLimit: 0
+  loadouts:
+  - MedicalBeret
+  - MedicalHeadMirror
+  - BlueSurgeryCap
+  - GreenSurgeryCap
+  - PurpleSurgeryCap
+  - NurseHat
+  - SeniorPhysicianBeret
+
+- type: loadoutGroup
+  id: SeniorEngineerHead
+  name: loadout-group-head
+  minLimit: 0
+  loadouts:
+  - StationEngineerHardhatYellow
+  - StationEngineerHardhatOrange
+  - StationEngineerHardhatRed
+  - ChiefEngineerHead
+  - SeniorEngineerBeret
+
+- type: loadoutGroup
   id: SeniorSalvageHead
   name: loadout-group-head
   minLimit: 0
@@ -383,10 +417,58 @@
   - MinerCloak
 
 - type: loadoutGroup
+  id: SeniorOfficerJumpsuit
+  name: loadout-group-jumpsuit
+  loadouts:
+  - JumpsuitSeniorOfficer
+  - JumpskirtSeniorOfficer
+  - SecuritySpecialJumpsuit
+
+- type: loadoutGroup
+  id: SeniorResearcherJumpsuit
+  name: loadout-group-jumpsuit
+  loadouts:
+  - JumpsuitSeniorResearcher
+  - JumpskirtSeniorResearcher
+
+- type: loadoutGroup
+  id: SeniorPhysicianJumpsuit
+  name: loadout-group-jumpsuit
+  loadouts:
+  - JumpsuitSeniorPhysician
+  - JumpskirtSeniorPhysician
+
+- type: loadoutGroup
+  id: SeniorEngineerJumpsuit
+  name: loadout-group-jumpsuit
+  loadouts:
+  - JumpsuitSeniorEngineer
+  - JumpskirtSeniorEngineer
+
+- type: loadoutGroup
   id: SeniorSalvageJumpsuit
   name: loadout-group-jumpsuit
   loadouts:
   - JumpsuitSeniorSalvage
+
+- type: loadoutGroup
+  id: SeniorResearcherOuterClothing
+  name: loadout-group-outerclothing
+  loadouts:
+  - RegularLabCoat
+  - ScienceLabCoat
+  - SeniorResearcherLabCoat
+  - ScienceWintercoat
+  - RoboticistLabCoat
+  - RoboticistWintercoat
+
+- type: loadoutGroup
+  id: SeniorPhysicianOuterClothing
+  name: loadout-group-outerclothing
+  loadouts:
+  - RegularLabCoat
+  - SeniorPhysicianLabCoat
+  - MedicalDoctorWintercoat
 
 # Science
 - type: loadoutGroup
