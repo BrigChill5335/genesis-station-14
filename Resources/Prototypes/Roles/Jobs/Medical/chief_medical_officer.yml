@@ -55,6 +55,3 @@
     neck: ClothingCloakCmo
     outerClothing: ClothingOuterCoatLabCmo
     gloves: ClothingHandsGlovesNitrile
-  storage:
-    back:
-    - TelescopicBaton
