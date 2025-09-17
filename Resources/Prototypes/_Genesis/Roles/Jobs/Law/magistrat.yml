@@ -58,6 +58,7 @@
 - type: chameleonOutfit
   id: MagistratOutfit
   job: Magistrat
+  hasMindShield: true
   equipment:
     head: ClothingHeadHatPwig
     eyes: ClothingEyesGlassesSunglasses
