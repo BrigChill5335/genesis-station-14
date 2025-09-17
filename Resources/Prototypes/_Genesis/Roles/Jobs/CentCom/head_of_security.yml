@@ -48,3 +48,12 @@
     back:
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: HoSCentComChameleonOutfit
+  job: HeadOfSecurityCentCom
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatHeadOfSecurityCentComBeret
+    mask: ClothingMaskGasSecurity
+    neck: ClothingNeckCloakHos
