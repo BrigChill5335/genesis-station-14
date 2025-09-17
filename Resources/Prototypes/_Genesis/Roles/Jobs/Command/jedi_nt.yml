@@ -37,3 +37,13 @@
     gloves: ClothingHandsGlovesCombat
     id: JediNTPDA
     eyes: ClothingEyesGlassesSunglassesModified
+
+- type: chameleonOutfit
+  id: JediNTChameleonOutfit
+  job: JediNT
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatJediNTBeret
+    mask: ClothingMaskGasJediNT
+    neck: ClothingNeckMantleJediNT
+    belt: ClothingBeltJediNTBelt
