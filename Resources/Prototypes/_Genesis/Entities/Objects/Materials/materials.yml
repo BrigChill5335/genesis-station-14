@@ -1,7 +1,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDragonSinew
-  name: refined diamond
+  name: refined-diamond
   suffix: Full
   components:
   - type: Stack
@@ -16,7 +16,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialXenoScale
-  name: refined diamond
+  name: refined-diamond
   suffix: Full
   components:
   - type: Stack
@@ -31,7 +31,7 @@
 - type: entity
   parent: MaterialDragonSinew
   id: MaterialDragonSinew1
-  name: refined diamond
+  name: refined-diamond
   suffix: Single
   components:
   - type: Stack
@@ -40,7 +40,7 @@
 - type: entity
   parent: MaterialXenoScale
   id: MaterialXenoScale1
-  name: refined diamond
+  name: refined-diamond
   suffix: Single
   components:
   - type: Stack
