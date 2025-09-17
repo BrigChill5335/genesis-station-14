@@ -33,3 +33,14 @@
   #storage:
     #back:
     #- Stuff
+
+- type: chameleonOutfit
+  id: CentComDoctorChameleonOutfit
+  job: CentralCommandMedicalDoctor
+  equipment:
+    head: ClothingHeadNurseHat
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatLab
+    gloves: ClothingHandsGlovesLatex
