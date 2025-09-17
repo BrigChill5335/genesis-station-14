@@ -10,7 +10,7 @@
       borg_module:
       - BorgModuleStandard
       - BorgModuleMining
-      - BorgModuleGPS
+#      - BorgModuleGPS
       - BorgModuleJetpack
   - type: ItemSlots
     slots:
