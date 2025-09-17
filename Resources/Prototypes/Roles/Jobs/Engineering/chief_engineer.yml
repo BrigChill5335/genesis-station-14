@@ -56,6 +56,3 @@
     outerClothing: ClothingOuterWinterCE
     gloves: ClothingHandsGlovesColorYellow
     shoes: ClothingShoesBootsMagAdv
-  storage:
-    back:
-    - TelescopicBaton
