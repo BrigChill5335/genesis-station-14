@@ -33,3 +33,15 @@
     - BoxSurvivalSecurity
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: PilotChameleonOutfit
+  job: Pilot
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetPilot
+    mask: ClothingMaskGasPilot
+    neck: Dinkystar
+    belt: ClothingBeltSecurity
+    gloves: ClothingHandsGlovesColorBlack
+    shoes: ClothingShoesBootsJackSec
