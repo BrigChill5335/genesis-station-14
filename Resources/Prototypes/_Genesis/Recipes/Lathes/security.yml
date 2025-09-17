@@ -40,10 +40,10 @@
   materials:
     Steel: 200
 
-- type: latheRecipe
-  id: MagazineMagnumSubMachineGun
-  result: MagazineMagnumSubMachineGun
-  completetime: 5
-  materials:
-    Steel: 450
+#- type: latheRecipe
+#  id: MagazineMagnumSubMachineGun
+#  result: MagazineMagnumSubMachineGun
+#  completetime: 5
+#  materials:
+#    Steel: 450
 
