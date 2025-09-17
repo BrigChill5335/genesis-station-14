@@ -54,3 +54,13 @@
     back:
     #- RubberStampMagistrat
     - BoxSurvival
+
+- type: chameleonOutfit
+  id: MagistratOutfit
+  job: Magistrat
+  equipment:
+    head: ClothingHeadHatPwig
+    eyes: ClothingEyesGlassesSunglasses
+    neck: ClothingNeckLawyerbadge
+    outerClothing: ClothingOuterRobesJudge
+    gloves: ClothingHandsGlovesColorBlack
