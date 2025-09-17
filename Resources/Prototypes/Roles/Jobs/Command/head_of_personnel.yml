@@ -81,6 +81,3 @@
     mask: ClothingMaskNeckGaiterRed
     neck: ClothingNeckCloakHop
     outerClothing: ClothingOuterWinterHoP
-  storage:
-    back:
-    - TelescopicBaton
