@@ -19,8 +19,7 @@
     maxCharges: 1
   - type: Action
     checkCanInteract: false
-    icon:
-#      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
+    #icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
     useDelay: 30
   - type: InstantAction
     event: !type:HairballActionEvent
