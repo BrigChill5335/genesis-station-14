@@ -21,3 +21,10 @@
     shoes: ClothingShoesColorBlack
     id: PrisonerPDA
     ears: ClothingHeadsetGrey
+
+- type: chameleonOutfit
+  id: PrisonerChameleonOutfit
+  job: Prisoner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    shoes: ClothingShoesColorBlack
