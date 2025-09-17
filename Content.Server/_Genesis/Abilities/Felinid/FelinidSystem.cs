@@ -37,7 +37,7 @@ public sealed class FelinidSystem : EntitySystem
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly SharedChargesSystem _charges = default!;
 
-    private static readonly EntProtoId EatMouseActionId = "EatMouseAction";
+    private static readonly EntProtoId EatMouseActionId = "ActionEatMouse";
 
     public override void Initialize()
     {
