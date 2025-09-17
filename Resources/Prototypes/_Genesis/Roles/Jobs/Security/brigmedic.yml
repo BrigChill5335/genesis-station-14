@@ -39,3 +39,16 @@
     - Flash
     - MagazinePistol
     - Cautery
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretBrigmedic
+    eyes: ClothingEyesGlassesMed
+    mask: ClothingMaskBreathMedicalSecurity
+    jumpsuit: ClothingUniformJumpsuitBrigmedic
+    belt: ClothingBeltMedicalFilled
+    gloves: ClothingHandsGlovesLatex
+    shoes: ClothingShoesBootsJackSec
