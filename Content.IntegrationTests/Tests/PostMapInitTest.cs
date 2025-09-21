@@ -88,7 +88,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Genesis/Shuttles/medical_ert_shuttle.yml",
             "/Maps/_Genesis/Shuttles/mining_shuttle.yml",
             "/Maps/_Genesis/Shuttles/officer_ert_shuttle.yml",
-            "/Maps/_Genesis/Shuttles/ferryman.yml",
+            //"/Maps/_Genesis/Shuttles/ferryman.yml",
             // Genesis-End
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**" // admin gaming
