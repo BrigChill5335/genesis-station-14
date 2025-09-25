@@ -44,7 +44,6 @@
         reagents:
         - ReagentId: Boyarsky
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/boyarsky.rsi
     state: icon
@@ -61,7 +60,6 @@
         reagents:
         - ReagentId: Bramble
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/bramble.rsi
     state: icon
