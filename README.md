@@ -47,7 +47,15 @@ Space Station 14 это ремейк SS13, который работает на 
 
 1. Склонируйте этот репозиторий:
 ```shell
+git clone https://github.com/BrigChill3000/genesis-station-14.git
+```
+или репозиторий от Workbench Team
+```shell
 git clone https://github.com/Workbench-Team/space-station-14.git
+```
+1.1. Необязательный пункт но если хотите клонировать что-то из ветки то прописывайте команду после того как прописали из 1 пункта команду
+```shell
+git checkout (название ветки)
 ```
 2. Зайдите в папку проекта и запустите скрипт `RUN_THIS.py` для инициализации субмодулей и скачивания движка:
 ```shell
