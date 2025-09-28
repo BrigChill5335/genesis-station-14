@@ -106,21 +106,6 @@
   - MagazineBoxPistol
 
 - type: thiefBackpackSet
-  id: VectorSet
-  name: ert-loadout-category-vector-name
-  description: ert-loadout-category-vector-description
-  sprite:
-    sprite: Objects/Weapons/Guns/SMGs/vector.rsi
-    state: icon
-  content:
-  - WeaponSubMachineGunVector
-  - MagazinePistolSubMachineGun
-  - MagazinePistolSubMachineGun
-  - MagazinePistolSubMachineGun
-  - MagazineBoxPistol
-  - MagazineBoxPistol
-
-- type: thiefBackpackSet
   id: LecterSet
   name: ert-loadout-category-lecter-name
   description: ert-loadout-category-lecter-description
@@ -401,50 +386,50 @@
   name: hardsuit-loadout-category-syndiecommander1-name
   description: hardsuit-loadout-category-syndiecommander1-description
   sprite:
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndie
+  - ClothingOuterHardsuitSyndieCommander
 
 - type: thiefBackpackSet
   id: SyndieCommanderHardsuitSet2
   name: hardsuit-loadout-category-syndiecommander2-name
   description: hardsuit-loadout-category-syndiecommander2-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/syndiecommander.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieBackmen
+  - ClothingOuterHardsuitSyndieCommanderBackmen
 
 - type: thiefBackpackSet
   id: SyndieCommanderHardsuitSet3
   name: hardsuit-loadout-category-syndiecommander3-name
   description: hardsuit-loadout-category-syndiecommander3-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndiecommander.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieCorvax
+  - ClothingOuterHardsuitSyndieCommanderCorvax
 
 - type: thiefBackpackSet
   id: SyndieCommaderHardsuitSet4
   name: hardsuit-loadout-category-syndiecommander4-name
   description: hardsuit-loadout-category-syndiecommander4-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndiecommander.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieSunRise
+  - ClothingOuterHardsuitSyndieCommanderSunRise
 
 - type: thiefBackpackSet
   id: SyndieCommanderHardsuitSet5
   name: hardsuit-loadout-category-syndiecommander5-name
   description: hardsuit-loadout-category-syndiecommander5-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndiecommander.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieXeno
+  - ClothingOuterHardsuitSyndieCommanderXeno
 
 # Medic
 - type: thiefBackpackSet
@@ -452,10 +437,10 @@
   name: hardsuit-loadout-category-syndiemedic1-name
   description: hardsuit-loadout-category-syndiemedic1-description
   sprite:
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndie
+  - ClothingOuterHardsuitSyndieMedic
 
 - type: thiefBackpackSet
   id: SyndieMedicHardsuitSet2
@@ -472,30 +457,30 @@
   name: hardsuit-loadout-category-syndiemedic3-name
   description: hardsuit-loadout-category-syndiemedic3-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndiemedic.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieCorvax
+  - ClothingOuterHardsuitSyndieMedicCorvax
 
 - type: thiefBackpackSet
   id: SyndieMedicHardsuitSet4
   name: hardsuit-loadout-category-syndiemedic4-name
   description: hardsuit-loadout-category-syndiemedic4-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndiemedic.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieSunRise
+  - ClothingOuterHardsuitSyndieMedicSunRise
 
 - type: thiefBackpackSet
   id: SyndieMedicHardsuitSet5
   name: hardsuit-loadout-category-syndiemedic5-name
   description: hardsuit-loadout-category-syndiemedic5-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndiemedic.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieXeno
+  - ClothingOuterHardsuitSyndieMedicXeno
 
 # Elite
 - type: thiefBackpackSet
@@ -503,50 +488,40 @@
   name: hardsuit-loadout-category-syndiemedic1-name
   description: hardsuit-loadout-category-syndiemedic1-description
   sprite:
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndie
+  - ClothingOuterHardsuitSyndieElite
 
 - type: thiefBackpackSet
   id: SyndieEliteHardsuitSet2
   name: hardsuit-loadout-category-syndiemedic2-name
   description: hardsuit-loadout-category-syndiemedic2-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/syndieelite.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieBackmen
+  - ClothingOuterHardsuitSyndieEliteBackmen
 
 - type: thiefBackpackSet
   id: SyndieEliteHardsuitSet3
   name: hardsuit-loadout-category-syndiemedic3-name
   description: hardsuit-loadout-category-syndiemedic3-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndieelite.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieCorvax
+  - ClothingOuterHardsuitSyndieEliteCorvax
 
 - type: thiefBackpackSet
   id: SyndieEliteHardsuitSet4
   name: hardsuit-loadout-category-syndiemedic4-name
   description: hardsuit-loadout-category-syndiemedic4-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndieelite.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieSunRise
-
-- type: thiefBackpackSet
-  id: SyndieEliteHardsuitSet5
-  name: hardsuit-loadout-category-syndiemedic5-name
-  description: hardsuit-loadout-category-syndiemedic5-description
-  sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndicate.rsi
-    state: icon
-  content:
-  - ClothingOuterHardsuitSyndieXeno
+  - ClothingOuterHardsuitSyndieEliteSunRise
 
 # Cybersun Juggernaut
 - type: thiefBackpackSet
@@ -554,47 +529,27 @@
   name: hardsuit-loadout-category-syndiemedic1-name
   description: hardsuit-loadout-category-syndiemedic1-description
   sprite:
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndie
+  - ClothingOuterHardsuitJuggernaut
 
 - type: thiefBackpackSet
   id: SyndieJuggernautHardsuitSet2
   name: hardsuit-loadout-category-syndiemedic2-name
   description: hardsuit-loadout-category-syndiemedic2-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Backmen/cybersun.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieBackmen
+  - ClothingOuterHardsuitJuggernautBackmen
 
 - type: thiefBackpackSet
   id: SyndieJuggernautHardsuitSet3
   name: hardsuit-loadout-category-syndiemedic3-name
   description: hardsuit-loadout-category-syndiemedic3-description
   sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/syndicate.rsi
+    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/Corvax/cybersun.rsi
     state: icon
   content:
-  - ClothingOuterHardsuitSyndieCorvax
-
-- type: thiefBackpackSet
-  id: SyndieJuggernautHardsuitSet4
-  name: hardsuit-loadout-category-syndiemedic4-name
-  description: hardsuit-loadout-category-syndiemedic4-description
-  sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/SunRise/syndicate.rsi
-    state: icon
-  content:
-  - ClothingOuterHardsuitSyndieSunRise
-
-- type: thiefBackpackSet
-  id: SyndieJuggernautHardsuitSet5
-  name: hardsuit-loadout-category-syndiemedic5-name
-  description: hardsuit-loadout-category-syndiemedic5-description
-  sprite:
-    sprite: Genesis/Clothing/OuterClothing/Hardsuits/NukeOps/XenoStation/syndicate.rsi
-    state: icon
-  content:
-  - ClothingOuterHardsuitSyndieXeno
+  - ClothingOuterHardsuitJuggernautCorvax
