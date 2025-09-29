@@ -165,6 +165,19 @@
   - Trinkets
   - GroupSpeciesBreathTool
 
+- type: roleLoadout
+  id: JobHeadOfStaffCentCom
+  groups:
+  - GroupTankHarness
+  - CentComHead
+  - CentComNeck
+  - CentComJumpsuit
+  - CentComGloves
+  - CentComBackpack
+  - CentComOuterClothing
+  - Trinkets
+  - GroupSpeciesBreathTool
+
 # Law
 - type: roleLoadout
   id: JobMagistrat
