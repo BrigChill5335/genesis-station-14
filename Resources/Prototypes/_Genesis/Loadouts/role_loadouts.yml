@@ -169,9 +169,9 @@
   id: JobHeadOfStaffCentCom
   groups:
   - GroupTankHarness
-  - HeadOfStaffHead
-  - HeadOfStaffNeck
-  - HeadOfStaffJumpsuit
+  - HeadOfStaffCentComHead
+  - HeadOfStaffCentComNeck
+  - HeadOfStaffCentComJumpsuit
   - CentComGloves
   - CentComBackpack
   - CentComOuterClothing
