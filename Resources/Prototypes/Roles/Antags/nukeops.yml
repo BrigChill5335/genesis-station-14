@@ -84,7 +84,7 @@
     outerClothing: ClothingOuterHardsuitSyndieCommander
   inhand:
   - NukeOpsDeclarationOfWar
-  - CommaderHardsuitCaseSyndicate # Genesis-Edit
+  - CommanderHardsuitCaseSyndicate # Genesis-Edit
 
 - type: chameleonOutfit
   id: NukeopsCommanderOutfit
