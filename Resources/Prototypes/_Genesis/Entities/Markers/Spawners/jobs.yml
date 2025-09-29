@@ -37,6 +37,7 @@
       - state: green
       - state: centcommember
 
+- type: entity
   id: SpawnPointHeadOfStaffCentCom
   parent: SpawnPointJobBase
   name: head of staff centcom
