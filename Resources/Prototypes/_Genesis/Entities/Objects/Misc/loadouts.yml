@@ -517,7 +517,7 @@
   - ClothingOuterHardsuitSyndieCommanderCorvax
 
 - type: thiefBackpackSet
-  id: SyndieCommaderHardsuitSet4
+  id: SyndieCommanderHardsuitSet4
   name: hardsuit-loadout-category-syndiecommander4-name
   description: hardsuit-loadout-category-syndiecommander4-description
   sprite:
