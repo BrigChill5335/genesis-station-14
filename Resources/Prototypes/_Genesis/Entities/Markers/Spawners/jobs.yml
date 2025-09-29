@@ -37,6 +37,18 @@
       - state: green
       - state: centcommember
 
+  id: SpawnPointHeadOfStaffCentCom
+  parent: SpawnPointJobBase
+  name: head of staff centcom
+  components:
+  - type: SpawnPoint
+    job_id: HeadOfStaffCentCom
+  - type: Sprite
+    sprite: Genesis/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: centcommember
+
 - type: entity
   id: SpawnPointCentComOperator
   parent: SpawnPointJobBase
