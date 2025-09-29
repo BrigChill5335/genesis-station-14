@@ -42,6 +42,7 @@
   description: department-CentralCommand-description
   color: "#0c344d"
   roles:
+  - HeadOfStaffCentCom # Genesis-Station
   - CentComOfficial # Genesis-Station
   - CentComOperator # Genesis-Station
   - HeadOfSecurityCentCom # Genesis-Station
