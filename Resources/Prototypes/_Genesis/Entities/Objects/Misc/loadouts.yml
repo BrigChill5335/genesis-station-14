@@ -26,7 +26,7 @@
         type: ThiefBackpackBoundUserInterface
 
 - type: entity
-  id: CommaderHardsuitCaseSyndicate
+  id: CommanderHardsuitCaseSyndicate
   name: hardsuit's case syndicate
   description: This is where your favorite thief's supplies lie. Try to remember which ones.
   parent: [ BaseItem, BaseMinorContraband ]
