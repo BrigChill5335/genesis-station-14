@@ -91,6 +91,28 @@
   loadouts:
   - ConsultantOuterClothing
 
+# Head Of Staff
+- type: loadoutGroup
+  id: HeadOfStaffHead
+  name: loadout-group-head
+  minLimit: 0
+  loadouts:
+  - CentComAdmiralHead
+
+- type: loadoutGroup
+  id: HeadOfStaffJumpsuit
+  name: loadout-group-jumpsuit
+  loadouts:
+  - CentComAdmiralJumpsuit
+
+- type: loadoutGroup
+  id: HeadOfStaffNeck
+  name: loadout-group-neck
+  minLimit: 0
+  loadouts:
+  - CentComAdmiralCloak
+  - CentcomCloak
+
 # BlueShield
 - type: loadoutGroup
   id: BlueShieldHead
