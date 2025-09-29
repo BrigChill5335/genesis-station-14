@@ -11,6 +11,9 @@
   id: JobCentComConsultant
 
 - type: playTimeTracker
+  id: JobHeadOfStaffCentCom
+
+- type: playTimeTracker
   id: JobBrigmedic
 
 - type: playTimeTracker
