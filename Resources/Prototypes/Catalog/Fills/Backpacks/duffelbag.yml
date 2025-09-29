@@ -250,7 +250,18 @@
   components:
   - type: StorageFill
     contents:
+    # Genesis-Edit test myb no
       - id: ClothingOuterHardsuitSyndie
+      orGroup: SyndieHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieBackmen
+      orGroup: SyndieHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieCorvax
+      orGroup: SyndieHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieSunRise
+      orGroup: SyndieHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieXeno
+      orGroup: SyndieHardsuitRandom
+    # Genesis-Edit test myb no
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled
@@ -264,7 +275,16 @@
   components:
   - type: StorageFill
     contents:
+    # Genesis-Edit test myb no
       - id: ClothingOuterHardsuitSyndieElite
+      orGroup: SyndieEliteHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieEliteBackmen
+      orGroup: SyndieEliteHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieEliteCorvax
+      orGroup: SyndieEliteHardsuitRandom
+      - id: ClothingOuterHardsuitSyndieEliteSunRise
+      orGroup: SyndieEliteHardsuitRandom
+    # Genesis-Edit test myb no
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled
