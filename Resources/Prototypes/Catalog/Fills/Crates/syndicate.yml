@@ -16,7 +16,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitJuggernaut
+      - id: JuggernautHardsuitCaseSyndicate # Genesis-Edit
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled
