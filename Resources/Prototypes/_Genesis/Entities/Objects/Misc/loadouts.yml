@@ -10,14 +10,119 @@
   - type: ThiefUndeterminedBackpack
     maxSelectedSets: 1
     possibleSets:
-    # TODO Thief pinpointer needed
-    - ChemistrySet
-    - ToolsSet
-    - ChameleonSet # TODO Chameleon stump PR needed
-    - SyndieSet
-    - SleeperSet
-    - CommunicatorSet
-    - SmugglerSet
+    - SyndieHardsuitSet1
+    - SyndieHardsuitSet2
+    - SyndieHardsuitSet3
+    - SyndieHardsuitSet4
+    - SyndieHardsuitSet5
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: WeaponCaseOpen
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  id: CommaderHardsuitCaseSyndicate
+  name: hardsuit's case syndicate
+  description: This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: [ BaseItem, BaseMinorContraband ]
+  components:
+  - type: Sprite
+    sprite: Genesis/Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    possibleSets:
+    - SyndieCommanderHardsuitSet1
+    - SyndieCommanderHardsuitSet2
+    - SyndieCommanderHardsuitSet3
+    - SyndieCommanderHardsuitSet4
+    - SyndieCommanderHardsuitSet5
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: WeaponCaseOpen
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  id: MedicHardsuitCaseSyndicate
+  name: hardsuit's case syndicate
+  description: This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: [ BaseItem, BaseMinorContraband ]
+  components:
+  - type: Sprite
+    sprite: Genesis/Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    possibleSets:
+    - SyndieMedicHardsuitSet1
+    - SyndieMedicHardsuitSet2
+    - SyndieMedicHardsuitSet3
+    - SyndieMedicHardsuitSet4
+    - SyndieMedicHardsuitSet5
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: WeaponCaseOpen
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  id: EliteHardsuitCaseSyndicate
+  name: hardsuit's case syndicate
+  description: This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: [ BaseItem, BaseMinorContraband ]
+  components:
+  - type: Sprite
+    sprite: Genesis/Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    possibleSets:
+    - SyndieEliteHardsuitSet1
+    - SyndieEliteHardsuitSet2
+    - SyndieEliteHardsuitSet3
+    - SyndieEliteHardsuitSet4
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: WeaponCaseOpen
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  id: JuggernautHardsuitCaseSyndicate
+  name: hardsuit's case syndicate
+  description: This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: [ BaseItem, BaseMinorContraband ]
+  components:
+  - type: Sprite
+    sprite: Genesis/Objects/Storage/Briefcases/weapon_case_syndie.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    possibleSets:
+    - SyndieJuggernautHardsuitSet1
+    - SyndieJuggernautHardsuitSet2
+    - SyndieJuggernautHardsuitSet3
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: WeaponCaseOpen
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface
