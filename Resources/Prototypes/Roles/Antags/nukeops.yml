@@ -47,11 +47,12 @@
     eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsCombatFilled
     id: SyndiPDA
     pocket2: PlushieCarp
     belt: ClothingBeltMilitaryWebbing
+  inhand:
+    - MedicHardsuitCaseSyndicate # Genesis-Edit
   storage:
     back:
     - WeaponPistolViper
@@ -83,6 +84,7 @@
     outerClothing: ClothingOuterHardsuitSyndieCommander
   inhand:
   - NukeOpsDeclarationOfWar
+  - CommaderHardsuitCaseSyndicate # Genesis-Edit
 
 - type: chameleonOutfit
   id: NukeopsCommanderOutfit
@@ -99,10 +101,11 @@
   parent: SyndicateOperativeGearFull
   equipment:
     eyes: ClothingEyesHudSyndicateAgent
-    outerClothing: ClothingOuterHardsuitSyndieMedic
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiAgentPDA
     belt: ClothingBeltMilitaryWebbingMedFilled
+  inhand:
+    - MedicHardsuitCaseSyndicate # Genesis-Edit
   storage:
     back:
     - SyndiHypo
