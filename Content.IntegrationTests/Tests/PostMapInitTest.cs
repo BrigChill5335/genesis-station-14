@@ -36,7 +36,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             // Genesis-Start
-            //"CentCommGenesis",
+            "CentCommGenesis",
             // Genesis-End
             "CentComm",
             "Dart"
@@ -45,7 +45,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] Grids =
         {
             // Genesis-Start
-            //"/Maps/_Genesis/centcomm.yml",
+            "/Maps/_Genesis/centcomm.yml",
             // Genesis-End
             "/Maps/centcomm.yml",
             AdminTestArenaSystem.ArenaMapPath
@@ -79,6 +79,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] DoNotMapWhitelist =
         {
             // Genesis-Start
+            "/Maps/_Genesis/centcomm.yml",
             //"/Maps/_Genesis/Shuttles/beetle.yml",
             //"/Maps/_Genesis/Shuttles/cburn_ert_shuttle.yml",
             //"/Maps/_Genesis/Shuttles/centcom_shuttle.yml",
