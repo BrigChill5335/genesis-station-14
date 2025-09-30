@@ -105,7 +105,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMaps =
         {
             // Genesis-Start
-            //"CentCommGenesis",
+            "CentCommGenesis",
             // Genesis-End
             "Dev",
             "TestTeg",
