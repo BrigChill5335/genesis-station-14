@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/02/2025 19:31:54
-  entityCount: 9761
+  time: 09/30/2025 10:56:58
+  entityCount: 9775
 maps: []
 grids:
 - 1668
@@ -50,22 +50,12 @@ tilemap:
 entities:
 - proto: ""
   entities:
-  - uid: 489
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
   - uid: 1668
     components:
     - type: MetaData
       name: Central Command
     - type: Transform
-      parent: 489
+      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:
@@ -7505,7 +7495,7 @@ entities:
   - uid: 534
     components:
     - type: Transform
-      pos: -1.5638304,0.6061465
+      pos: -0.24795187,1.5721796
       parent: 1668
   - uid: 1611
     components:
@@ -7537,7 +7527,7 @@ entities:
   - uid: 10
     components:
     - type: Transform
-      pos: -3.4334178,-1.6784649
+      pos: -3.43848,-2.3549795
       parent: 1668
   - uid: 535
     components:
@@ -7603,7 +7593,7 @@ entities:
   - uid: 482
     components:
     - type: Transform
-      pos: -3.6052928,-1.4909649
+      pos: -3.87598,-2.2508125
       parent: 1668
   - uid: 4838
     components:
@@ -7667,7 +7657,7 @@ entities:
   - uid: 533
     components:
     - type: Transform
-      pos: -1.6914892,1.0316784
+      pos: -0.73396444,1.5546008
       parent: 1668
   - uid: 1987
     components:
@@ -20274,7 +20264,7 @@ entities:
   - uid: 499
     components:
     - type: Transform
-      pos: -3.5328715,-1.3873212
+      pos: -3.480146,-2.0633125
       parent: 1668
   - uid: 2812
     components:
@@ -21835,6 +21825,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -38.5,-9.5
       parent: 1668
+  - uid: 9108
+    components:
+    - type: Transform
+      pos: -1.4802338,-1.5216457
+      parent: 1668
   - uid: 9193
     components:
     - type: Transform
@@ -21857,15 +21852,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -34.5,6.5
       parent: 1668
-  - uid: 9629
+  - uid: 9695
     components:
     - type: Transform
-      pos: -1.429344,-1.4521462
-      parent: 1668
-  - uid: 9700
-    components:
-    - type: Transform
-      pos: 0.48555005,-1.4521462
+      pos: 0.4989322,-1.5008126
       parent: 1668
 - proto: ChairOfficeLight
   entities:
@@ -23794,6 +23784,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -37.5,5.5
       parent: 1668
+- proto: ComputerSalvageExpedition
+  entities:
+  - uid: 9707
+    components:
+    - type: Transform
+      pos: -1.5,32.5
+      parent: 1668
 - proto: ComputerShuttleCargo
   entities:
   - uid: 3906
@@ -23809,10 +23806,11 @@ entities:
       parent: 1668
 - proto: ComputerShuttleCentComm
   entities:
-  - uid: 9108
+  - uid: 508
     components:
     - type: Transform
-      pos: -0.5,1.5
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-1.5
       parent: 1668
 - proto: ComputerSurveillanceCameraMonitor
   entities:
@@ -27352,13 +27350,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -22.5,-11.5
       parent: 1668
-- proto: filingCabinetDrawerRandom
-  entities:
-  - uid: 9695
-    components:
-    - type: Transform
-      pos: -2.5,1.5
-      parent: 1668
 - proto: filingCabinetRandom
   entities:
   - uid: 1537
@@ -27395,6 +27386,11 @@ entities:
     components:
     - type: Transform
       pos: -36.5,7.5
+      parent: 1668
+  - uid: 9629
+    components:
+    - type: Transform
+      pos: -2.5,1.5
       parent: 1668
 - proto: FireAxeCabinetFilled
   entities:
@@ -44306,7 +44302,7 @@ entities:
   - uid: 528
     components:
     - type: Transform
-      pos: 0.43616962,1.0742319
+      pos: 0.062660635,1.813037
       parent: 1668
   - uid: 2860
     components:
@@ -50247,7 +50243,7 @@ entities:
   - uid: 12
     components:
     - type: Transform
-      pos: -3.6834178,-1.8503399
+      pos: -3.771813,-2.5633125
       parent: 1668
   - uid: 532
     components:
@@ -50275,6 +50271,14 @@ entities:
     components:
     - type: Transform
       pos: -35.37574,11.823141
+      parent: 1668
+- proto: SalvageMagnet
+  entities:
+  - uid: 9708
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,35.5
       parent: 1668
 - proto: Screen
   entities:
@@ -52335,65 +52339,73 @@ entities:
       parent: 1668
 - proto: SpawnPointCentComAssistant
   entities:
-  - uid: 9696
+  - uid: 9705
     components:
     - type: Transform
-      pos: 23.5,-21.5
+      pos: -0.5,-34.5
       parent: 1668
 - proto: SpawnPointCentComCargo
+  entities:
+  - uid: 9706
+    components:
+    - type: Transform
+      pos: 3.5,27.5
+      parent: 1668
+- proto: SpawnPointCentComMedicalDoctor
+  entities:
+  - uid: 9702
+    components:
+    - type: Transform
+      pos: 12.5,-6.5
+      parent: 1668
+- proto: SpawnPointCentComOfficial
   entities:
   - uid: 9697
     components:
     - type: Transform
-      pos: 2.5,23.5
-      parent: 1668
-- proto: SpawnPointCentComMedicalDoctor
-  entities:
-  - uid: 9704
-    components:
-    - type: Transform
-      pos: 15.5,-4.5
-      parent: 1668
-- proto: SpawnPointCentComOfficial
-  entities:
-  - uid: 9698
-    components:
-    - type: Transform
-      pos: -0.5,0.5
+      pos: -2.5,-1.5
       parent: 1668
 - proto: SpawnPointCentComOperator
   entities:
-  - uid: 9701
+  - uid: 9696
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1668
 - proto: SpawnPointCentComSecurityOfficer
   entities:
-  - uid: 9705
+  - uid: 9703
     components:
     - type: Transform
       pos: 16.5,7.5
       parent: 1668
 - proto: SpawnPointEngineerCentCom
   entities:
-  - uid: 9702
+  - uid: 9698
     components:
     - type: Transform
-      pos: -7.5,10.5
+      pos: -6.5,10.5
       parent: 1668
 - proto: SpawnPointHeadOfSecurityCentCom
   entities:
-  - uid: 9703
+  - uid: 9700
     components:
     - type: Transform
-      pos: -36.5,-7.5
+      pos: 13.5,19.5
+      parent: 1668
+- proto: SpawnPointHeadOfStaffCentCom
+  entities:
+  - uid: 9701
+    components:
+    - type: Transform
+      pos: -12.5,12.5
       parent: 1668
 - proto: SpawnPointLatejoin
   entities:
-  - uid: 9706
+  - uid: 9709
     components:
     - type: Transform
+      rot: 3.141592653589793 rad
       pos: 26.5,-0.5
       parent: 1668
 - proto: SpeedLoaderMagnumAP
@@ -52902,6 +52914,13 @@ entities:
     components:
     - type: Transform
       pos: -15.5,25.5
+      parent: 1668
+- proto: SuitStorageCarporate
+  entities:
+  - uid: 9704
+    components:
+    - type: Transform
+      pos: -21.5,13.5
       parent: 1668
 - proto: SuitStorageEngi
   entities:
@@ -54547,6 +54566,11 @@ entities:
     - type: Transform
       pos: 15.5,2.5
       parent: 1668
+  - uid: 489
+    components:
+    - type: Transform
+      pos: -0.5,1.5
+      parent: 1668
   - uid: 492
     components:
     - type: Transform
@@ -54561,11 +54585,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,0.5
-      parent: 1668
-  - uid: 508
-    components:
-    - type: Transform
-      pos: -3.5,-1.5
       parent: 1668
   - uid: 512
     components:
