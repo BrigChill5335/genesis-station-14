@@ -81,7 +81,6 @@
   parent: SyndicateOperativeGearFull
   equipment:
     neck: SyndicateWhistle
-    outerClothing: ClothingOuterHardsuitSyndieCommander
   inhand:
   - NukeOpsDeclarationOfWar
   - CommanderHardsuitCaseSyndicate # Genesis-Edit
