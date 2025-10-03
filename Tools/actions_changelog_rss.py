@@ -1,235 +1,233 @@
 #!/usr/bin/env python3
 
-"""
-Sends updates to a Discord webhook for new changelog entries since the last GitHub Actions publish run.
+#
+# Updates an RSS file on a remote server with updates to the changelog.
+# See https://docs.spacestation14.io/en/hosting/changelogs for instructions.
+#
 
-Automatically figures out the last run and changelog contents with the GitHub API.
-"""
+# If you wanna test this script locally on Windows,
+# you can use something like this in Powershell to set up the env var:
+# $env:CHANGELOG_RSS_KEY=[System.IO.File]::ReadAllText($(gci "key"))
 
-import itertools
 import os
-from pathlib import Path
-from typing import Any, Iterable
-
-import requests
+import paramiko
+import pathlib
+import io
+import base64
 import yaml
-import time
+import itertools
+import html
+import email.utils
+from typing import  List, Any, Tuple
+from lxml import etree as ET
+from datetime import datetime, timedelta, timezone
 
-DEBUG = False
-DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
-GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
+MAX_ITEM_AGE = timedelta(days=30)
 
-# https://discord.com/developers/docs/resources/webhook
-DISCORD_SPLIT_LIMIT = 2000
-DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
+# Set as a repository secret.
+CHANGELOG_RSS_KEY = os.environ.get("CHANGELOG_RSS_KEY")
 
-CHANGELOG_FILES = ["Resources/Changelog/Changelog.yml", "Resources/Changelog/ChangelogSyndie.yml"] # Corvax-MultiChangelog
+# Change these to suit your server settings
+# https://docs.fabfile.org/en/stable/getting-started.html#run-commands-via-connections-and-run
+SSH_HOST = "moon.spacestation14.com"
+SSH_USER = "changelog-rss"
+SSH_PORT = 22
+RSS_FILE = "changelog.xml"
+XSL_FILE = "stylesheet.xsl"
+HOST_KEYS = [
+    "AAAAC3NzaC1lZDI1NTE5AAAAIOBpGO/Qc6X0YWuw7z+/WS/65+aewWI29oAyx+jJpCmh"
+]
+
+# RSS feed parameters, change these
+FEED_TITLE       = "Space Station 14 Changelog"
+FEED_LINK        = "https://github.com/space-wizards/space-station-14/"
+FEED_DESCRIPTION = "Changelog for the official Wizard's Den branch of Space Station 14."
+FEED_LANGUAGE    = "en-US"
+FEED_GUID_PREFIX = "ss14-changelog-wizards-"
+FEED_URL         = "https://central.spacestation14.io/changelog.xml"
+
+CHANGELOG_FILE = ["Resources/Changelog/Changelog.yml", "Resources/Changelog/ChangelogGenesis.yml"]
 
 TYPES_TO_EMOJI = {
     "Fix":    "🐛",
-    "Add":    "✨", # Corvax: Use gitmoji 💥
+    "Add":    "🆕",
     "Remove": "❌",
     "Tweak":  "⚒️"
 }
 
-ChangelogEntry = dict[str, Any]
+XML_NS = "https://spacestation14.com/changelog_rss"
+XML_NS_B = f"{{{XML_NS}}}"
 
+XML_NS_ATOM = "http://www.w3.org/2005/Atom"
+XML_NS_ATOM_B = f"{{{XML_NS_ATOM}}}"
+
+ET.register_namespace("ss14", XML_NS)
+ET.register_namespace("atom", XML_NS_ATOM)
+
+# From https://stackoverflow.com/a/37958106/4678631
+class NoDatesSafeLoader(yaml.SafeLoader):
+    @classmethod
+    def remove_implicit_resolver(cls, tag_to_remove):
+        if not 'yaml_implicit_resolvers' in cls.__dict__:
+            cls.yaml_implicit_resolvers = cls.yaml_implicit_resolvers.copy()
+
+        for first_letter, mappings in cls.yaml_implicit_resolvers.items():
+            cls.yaml_implicit_resolvers[first_letter] = [(tag, regexp)
+                                                         for tag, regexp in mappings
+                                                         if tag != tag_to_remove]
+
+# Hrm yes let's make the fucking default of our serialization library to PARSE ISO-8601
+# but then output garbage when re-serializing.
+NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,2002:timestamp')
 
 def main():
-    if not DISCORD_WEBHOOK_URL:
-        print("No discord webhook URL found, skipping discord send")
+    if not CHANGELOG_RSS_KEY:
+        print("::notice ::CHANGELOG_RSS_KEY not set, skipping RSS changelogs")
         return
 
-    if DEBUG:
-        # to debug this script locally, you can use
-        # a separate local file as the old changelog
-        last_changelog_stream = DEBUG_CHANGELOG_FILE_OLD.read_text()
-    else:
-        # when running this normally in a GitHub actions workflow,
-        # it will get the old changelog from the GitHub API
-        last_changelog_stream = get_last_changelog()
+    with open(CHANGELOG_FILE, "r") as f:
+        changelog = yaml.load(f, Loader=NoDatesSafeLoader)
 
-    most_recent = get_most_recent_workflow(session)
-    last_sha = most_recent['head_commit']['id']
-    print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
+    with paramiko.SSHClient() as client:
+        load_host_keys(client.get_host_keys())
+        client.connect(SSH_HOST, SSH_PORT, SSH_USER, pkey=load_key(CHANGELOG_RSS_KEY))
+        sftp = client.open_sftp()
 
-    # Corvax-MultiChangelog-Start
-    for changelog_file in CHANGELOG_FILES:
-        last_changelog = yaml.safe_load(get_last_changelog(session, last_sha, changelog_file))
-        with open(changelog_file, "r") as f:
-            cur_changelog = yaml.safe_load(f)
+        last_feed_items = load_last_feed_items(sftp)
 
-        diff = diff_changelog(last_changelog, cur_changelog)
-        send_to_discord(diff)
-    # Corvax-MultiChangelog-End
+        feed, any_new = create_feed(changelog, last_feed_items)
+
+        if not any_new:
+            print("No changes since last last run.")
+            return
+
+        et = ET.ElementTree(feed)
+        with sftp.open(RSS_FILE, "wb") as f:
+            et.write(
+                f,
+                encoding="utf-8",
+                xml_declaration=True,
+                # This ensures our stylesheet is loaded
+                doctype="<?xml-stylesheet type='text/xsl' href='./stylesheet.xsl'?>",
+            )
+
+        # Copy in the stylesheet
+        dir_name = os.path.dirname(__file__)
+
+        template_path = pathlib.Path(dir_name, 'changelogs', XSL_FILE)
+        with sftp.open(XSL_FILE, "wb") as f, open(template_path) as fh:
+            f.write(fh.read())
 
 
-def get_most_recent_workflow(
-    sess: requests.Session, github_repository: str, github_run: str
-) -> Any:
-    workflow_run = get_current_run(sess, github_repository, github_run)
-    past_runs = get_past_runs(sess, workflow_run)
-    for run in past_runs["workflow_runs"]:
-        # First past successful run that isn't our current run.
-        if run["id"] == workflow_run["id"]:
+def create_feed(changelog: Any, previous_items: List[Any]) -> Tuple[Any, bool]:
+    rss = ET.Element("rss", attrib={"version": "2.0"})
+    channel = ET.SubElement(rss, "channel")
+
+    time_now = datetime.now(timezone.utc)
+
+    # Fill out basic channel info
+    ET.SubElement(channel, "title").text       = FEED_TITLE
+    ET.SubElement(channel, "link").text        = FEED_LINK
+    ET.SubElement(channel, "description").text = FEED_DESCRIPTION
+    ET.SubElement(channel, "language").text    = FEED_LANGUAGE
+
+    ET.SubElement(channel, "lastBuildDate").text = email.utils.format_datetime(time_now)
+    ET.SubElement(channel, XML_NS_ATOM_B + "link", {"type": "application/rss+xml", "rel": "self", "href": FEED_URL})
+
+    # Find the last item ID mentioned in the previous changelog
+    last_changelog_id = find_last_changelog_id(previous_items)
+
+    any = create_new_item_since(changelog, channel, last_changelog_id, time_now)
+    copy_previous_items(channel, previous_items, time_now)
+
+    return rss, any
+
+def create_new_item_since(changelog: Any, channel: Any, since: int, now: datetime) -> bool:
+    entries_for_item = [entry for entry in changelog["Entries"] if entry["id"] > since]
+    top_entry_id = max(map(lambda e: e["id"], entries_for_item), default=0)
+
+    if not entries_for_item:
+        return False
+
+    attrs = {XML_NS_B + "from-id": str(since), XML_NS_B + "to-id": str(top_entry_id)}
+    new_item = ET.SubElement(channel, "item", attrs)
+    ET.SubElement(new_item, "pubDate").text = email.utils.format_datetime(now)
+    ET.SubElement(new_item, "guid", {"isPermaLink": "false"}).text = f"{FEED_GUID_PREFIX}{since}-{top_entry_id}"
+
+    ET.SubElement(new_item, "description").text = generate_description_for_entries(entries_for_item)
+
+    # Embed original entries inside the XML so it can be displayed more nicely by specialized tools.
+    # Like the website!
+    for entry in entries_for_item:
+        xml_entry = ET.SubElement(new_item, XML_NS_B + "entry")
+        ET.SubElement(xml_entry, XML_NS_B + "id").text = str(entry["id"])
+        ET.SubElement(xml_entry, XML_NS_B + "time").text = entry["time"]
+        ET.SubElement(xml_entry, XML_NS_B + "author").text = entry["author"]
+
+        for change in entry["changes"]:
+            attrs = {XML_NS_B + "type": change["type"]}
+            ET.SubElement(xml_entry, XML_NS_B + "change", attrs).text = change["message"]
+
+    return True
+
+def generate_description_for_entries(entries: List[Any]) -> str:
+    desc = io.StringIO()
+
+    keyfn = lambda x: x["author"]
+    sorted_author = sorted(entries, key=keyfn)
+    for author, group in itertools.groupby(sorted_author, keyfn):
+        desc.write(f"<h3>{html.escape(author)} updated:</h3>\n")
+        desc.write("<ul>\n")
+        for entry in sorted(group, key=lambda x: x["time"]):
+            for change in entry["changes"]:
+                emoji = TYPES_TO_EMOJI.get(change["type"], "")
+                msg = change["message"]
+                desc.write(f"<li>{emoji} {html.escape(msg)}</li>")
+
+        desc.write("</ul>\n")
+
+    return desc.getvalue()
+
+def copy_previous_items(channel: Any, previous: List[Any], now: datetime):
+    # Copy in previous items, if we have them.
+    for item in previous:
+        date_elem = item.find("./pubDate")
+        if date_elem is None:
+            # Item doesn't have a valid publication date?
             continue
 
-        return run
+        date = email.utils.parsedate_to_datetime(date_elem.text or "")
+        if date + MAX_ITEM_AGE < now:
+            # Item too old, get rid of it.
+            continue
+
+        channel.append(item)
+
+def find_last_changelog_id(items: List[Any]) -> int:
+    return max(map(lambda i: int(i.get(XML_NS_B + "to-id", "0")), items), default=0)
+
+def load_key(key_contents: str) -> paramiko.PKey:
+    key_string = io.StringIO()
+    key_string.write(key_contents)
+    key_string.seek(0)
+    return paramiko.Ed25519Key.from_private_key(key_string)
 
 
-def get_current_run(
-    sess: requests.Session, github_repository: str, github_run: str
-) -> Any:
-    resp = sess.get(
-        f"{GITHUB_API_URL}/repos/{github_repository}/actions/runs/{github_run}"
-    )
-    resp.raise_for_status()
-    return resp.json()
+def load_host_keys(host_keys: paramiko.HostKeys):
+    for key in HOST_KEYS:
+        host_keys.add(SSH_HOST, "ssh-ed25519", paramiko.Ed25519Key(data=base64.b64decode(key)))
 
 
-def get_past_runs(sess: requests.Session, current_run: Any) -> Any:
-    """
-    Get all successful workflow runs before our current one.
-    """
-    params = {"status": "success", "created": f"<={current_run['created_at']}"}
-    resp = sess.get(f"{current_run['workflow_url']}/runs", params=params)
-    resp.raise_for_status()
-    return resp.json()
-
-
-def get_last_changelog() -> str:
-    github_repository = os.environ["GITHUB_REPOSITORY"]
-    github_run = os.environ["GITHUB_RUN_ID"]
-    github_token = os.environ["GITHUB_TOKEN"]
-
-    session = requests.Session()
-    session.headers["Authorization"] = f"Bearer {github_token}"
-    session.headers["Accept"] = "Accept: application/vnd.github+json"
-    session.headers["X-GitHub-Api-Version"] = "2022-11-28"
-
-    most_recent = get_most_recent_workflow(session, github_repository, github_run)
-    last_sha = most_recent["head_commit"]["id"]
-    print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
-    last_changelog_stream = get_last_changelog_by_sha(
-        session, last_sha, github_repository
-    )
-
-    return last_changelog_stream
-
-
-def get_last_changelog_by_sha(
-    sess: requests.Session, sha: str, github_repository: str
-) -> str:
-    """
-    Use GitHub API to get the previous version of the changelog YAML (Actions builds are fetched with a shallow clone)
-    """
-    params = {
-        "ref": sha,
-    }
-    headers = {"Accept": "application/vnd.github.raw"}
-
-    resp = sess.get(f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/contents/{changelog_file}", headers=headers, params=params)
-    resp.raise_for_status()
-    return resp.text
-
-
-def diff_changelog(
-    old: dict[str, Any], cur: dict[str, Any]
-) -> Iterable[ChangelogEntry]:
-    """
-    Find all new entries not present in the previous publish.
-    """
-    old_entry_ids = {e["id"] for e in old["Entries"]}
-    return (e for e in cur["Entries"] if e["id"] not in old_entry_ids)
-
-
-def get_discord_body(content: str):
-    return {
-        "content": content,
-        # Do not allow any mentions.
-        "allowed_mentions": {"parse": []},
-        # SUPPRESS_EMBEDS
-        "flags": 1 << 2,
-    }
-
-
-def send_discord_webhook(lines: list[str]):
-    content = "".join(lines)
-    body = get_discord_body(content)
-    retry_attempt = 0
-
+def load_last_feed_items(client: paramiko.SFTPClient) -> List[Any]:
     try:
-        response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        while response.status_code == 429:
-            retry_attempt += 1
-            if retry_attempt > 20:
-                print("Too many retries on a single request despite following retry_after header... giving up")
-                exit(1)
-            retry_after = response.json().get("retry_after", 5)
-            print(f"Rate limited, retrying after {retry_after} seconds")
-            time.sleep(retry_after)
-            response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        print(f"Failed to send message: {e}")
-        exit(1)
+        with client.open(RSS_FILE, "rb") as f:
+            feed = ET.parse(f)
+
+        return feed.findall("./channel/item")
+
+    except FileNotFoundError:
+        return []
 
 
-def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> list[str]:
-    """Process structured changelog entries into a list of lines making up a formatted message."""
-    message_lines = []
 
-    for contributor_name, group in itertools.groupby(entries, lambda x: x["author"]):
-        message_lines.append("\n")
-        message_lines.append(f"**{contributor_name}** updated:\n")
-
-        for entry in group:
-            url = entry.get("url")
-            if url and not url.strip():
-                url = None
-
-            for change in entry["changes"]:
-                emoji = TYPES_TO_EMOJI.get(change["type"], "❓")
-                message = change["message"]
-
-                # if a single line is longer than the limit, it needs to be truncated
-                if len(message) > DISCORD_SPLIT_LIMIT:
-                    message = message[: DISCORD_SPLIT_LIMIT - 100].rstrip() + " [...]"
-
-                if url is not None:
-                    pr_number = url.split("/")[-1]
-                    line = f"{emoji} - {message} ([#{pr_number}]({url}))\n"
-                else:
-                    line = f"{emoji} - {message}\n"
-
-                message_lines.append(line)
-
-    return message_lines
-
-
-def send_message_lines(message_lines: list[str]):
-    """Join a list of message lines into chunks that are each below Discord's message length limit, and send them."""
-    chunk_lines = []
-    chunk_length = 0
-
-    for line in message_lines:
-        line_length = len(line)
-        new_chunk_length = chunk_length + line_length
-
-        if new_chunk_length > DISCORD_SPLIT_LIMIT:
-            print("Split changelog and sending to discord")
-            send_discord_webhook(chunk_lines)
-
-            new_chunk_length = line_length
-            chunk_lines.clear()
-
-        chunk_lines.append(line)
-        chunk_length = new_chunk_length
-
-    if chunk_lines:
-        print("Sending final changelog to discord")
-        send_discord_webhook(chunk_lines)
-
-
-if __name__ == "__main__":
-    main()
+main()
