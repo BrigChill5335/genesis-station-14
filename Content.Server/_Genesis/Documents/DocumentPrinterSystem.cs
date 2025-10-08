@@ -1,6 +1,6 @@
 using Content.Shared.Access.Components;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Corvax.Documents;
+using Content.Shared._Genesis.Documents;
 using Content.Shared.Lathe;
 using Content.Shared.Paper;
 using Content.Shared.Station;
